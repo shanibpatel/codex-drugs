@@ -10,7 +10,7 @@
     "form": {
       "type": "contact-form",
       "custom_css": [
-        ".button {font-family: Nunito, sans-serif; font-size: 25px; font-weight: 700; width: 228px; height: 60px; min-height: 60px; background-color: #88ac2f; color: white; border: none !important; border-style: none !important; border-style: none; border-width: 0px; border-color: transparent !important; \/* Change border color to transparent *\/ border-top-left-radius: 20px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 20px; transition-duration: 0.4s; margin: 0 0 30px; border-radius:none}"
+        ".button {font-family: Nunito, sans-serif; font-size: 25px; font-weight: 700; width: 228px; height: 60px; min-height: 60px; background-color: #88ac2f; color: white; border: none !important; border-style: none !important; border-style: none; border-width: 0px; border-color: transparent !important; \/* Change border color to transparent *\/ border-top-left-radius: 20px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 20px; transition-duration: 0.4s; margin: 0 0 30px;}"
       ],
       "settings": {
         "heading": "",
