@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-02-19 07:16:07
+ At 2024-02-19 07:20:50
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -50,7 +50,7 @@
  
  {% capture quickshop_layout%}full{% endcapture %}
  {% capture product_style%}undefined{% endcapture%}
- {%- assign view_more_only = undefined -%}
+ {%- assign view_more_only = false -%}
  {% capture product_layout %}grid{% endcapture %}
  {% assign check_min = 0%}
  {% if products and products.size > check_min and products != blank %}
@@ -175,20 +175,6 @@
  </div>
  {%- if product.requires_selling_plan == true and view_more_only != true -%}
  
- <div
- class="ecom-button-default ecom-collection__product-form__actions">
- <a class="ecom-collection__product-form__actions--view-more ecom-collection__product-view-more-before ecom-child-element"
- 
- target=""
- href="{%- if is_collection-%}{{- product.url | within: collection -}}{% else %}{{- product.url -}}{%-endif-%}"
- title="{{ product.title | escape }}">
- 
- <span class="ecom-collection__product-view-more-text">
- {{ 'sections.ecom-home-home.view_more_text_n2pggic14ge_html' | t }}
- </span>
- </a>
- </div>
- 
  {%- else -%}
  <div class="ecom-collection__product-quick-shop-add-to-cart-wrapper {% if hide_quickshop or view_more_only %} ecom-collection__product-quick-shop--force-show{% endif %}">
  <div class="ecom-collection__product-form__actions ">
@@ -198,12 +184,12 @@
  data-text-add-cart="{{ 'sections.ecom-home-home.add_to_cart_n2pggic14ge_html' | t }}"
  data-text-unavailable="{{ 'sections.ecom-home-home.product_unavailable_n2pggic14ge_html' | t }}"
  data-text-sold-out="{{ 'sections.ecom-home-home.product_soldout_n2pggic14ge_html' | t }}"
- data-action="popup"
+ data-action="cart"
  data-text-added-cart="{{ 'sections.ecom-home-home.added_cart_text_n2pggic14ge_html' | t }}"
  data-message-added-cart="{{ 'sections.ecom-home-home.added_cart_message_n2pggic14ge_html' | t }}"
  data-href="#"
  data-target="_blank"
- data-text-pre-order="{{ 'sections.ecom-home-home.pre_order_n2pggic14ge_html' | t }}"
+ data-text-pre-order=""
  
  >
  
@@ -249,17 +235,6 @@
  {%- endif -%}
  {% if view_more_only %}
  
- <a class="ecom-collection__product-form__actions--view-more ecom-collection__product-view-more-before ecom-child-element"
- 
- target=""
- href="{%- if is_collection-%}{{- product.url | within: collection -}}{% else %}{{- product.url -}}{%-endif-%}"
- title="{{ product.title | escape }}">
- 
- <span class="ecom-collection__product-view-more-text">
- {{ 'sections.ecom-home-home.view_more_text_n2pggic14ge_html' | t }}
- </span>
- </a>
- 
  {% elsif product.available == false %}
  
  <a class="ecom-collection__product-form__actions--soldout ecom-collection__product-sold-out-before ecom-child-element"
@@ -275,25 +250,11 @@
  {% elsif product.has_only_default_variant %}
  {%- if product.requires_selling_plan == true and view_more_only != true -%}
  
- <div
- class="ecom-button-default ecom-collection__product-form__actions">
- <a class="ecom-collection__product-form__actions--view-more ecom-collection__product-view-more-before ecom-child-element"
- 
- target=""
- href="{%- if is_collection-%}{{- product.url | within: collection -}}{% else %}{{- product.url -}}{%-endif-%}"
- title="{{ product.title | escape }}">
- 
- <span class="ecom-collection__product-view-more-text">
- {{ 'sections.ecom-home-home.view_more_text_n2pggic14ge_html' | t }}
- </span>
- </a>
- </div>
- 
  {%- else -%}
  
  
  <a data-no-instant href="{{ecom_root_url}}cart/add?id={{ product.variants.first.id }}&quantity=1"
- data-action="popup"
+ data-action="cart"
  data-text-added-cart="{{ 'sections.ecom-home-home.added_cart_text_n2pggic14ge_html' | t }}"
  data-message-added-cart="{{ 'sections.ecom-home-home.added_cart_message_n2pggic14ge_html' | t }}"
  data-href="#"
@@ -304,7 +265,7 @@
  
  <span class="ecom-add-to-cart-text">
  {%- if product.variants.first.inventory_management and product.variants.first.inventory_quantity <= 0 and product.variants.first.inventory_policy == 'continue' -%}
- {{ 'sections.ecom-home-home.pre_order_n2pggic14ge_html' | t }}
+ 
  {%-else-%}
  {{ 'sections.ecom-home-home.add_to_cart_n2pggic14ge_html' | t }}
  {%- endif -%}
@@ -1077,21 +1038,6 @@
  "name": "home",
  "locales": {
  "en": {
- "product_option_swatch_n2pggic14ge_html": "Color",
- "view_more_text_n2pggic14ge_html": "View more",
- "add_to_cart_n2pggic14ge_html": "Add to cart ",
- "product_unavailable_n2pggic14ge_html": "Unavailable",
- "product_soldout_n2pggic14ge_html": "Sold out",
- "added_cart_text_n2pggic14ge_html": "Added to cart",
- "added_cart_message_n2pggic14ge_html": "Added to cart",
- "pre_order_n2pggic14ge_html": "Pre order",
- "sold_out_text_n2pggic14ge_html": "Sold out",
- "quick_shop_text_n2pggic14ge_html": "Quick Shop",
- "sold_text_n2pggic14ge_html": "Sold",
- "sale_text_n2pggic14ge_html": "Sale",
- "sale_badge_n2pggic14ge_html": "-33%",
- "countdown_title_n2pggic14ge_html": " ",
- "no_product_item_n2pggic14ge_html": "There are no product yet!",
  "product_option_swatch_hd6hog77se9_html": "Color",
  "view_more_text_hd6hog77se9_html": "View more",
  "sold_out_text_hd6hog77se9_html": "Sold out",
@@ -1103,6 +1049,19 @@
  "sale_text_hd6hog77se9_html": "Sale",
  "sale_badge_hd6hog77se9_html": "-{{sale}}%",
  "countdown_title_hd6hog77se9_html": "Hurry up! The sale will end on",
+ "product_option_swatch_n2pggic14ge_html": "Color",
+ "add_to_cart_n2pggic14ge_html": "Add to cart ",
+ "product_unavailable_n2pggic14ge_html": "Unavailable",
+ "product_soldout_n2pggic14ge_html": "Sold out",
+ "added_cart_text_n2pggic14ge_html": "Added to cart",
+ "added_cart_message_n2pggic14ge_html": "Added to cart",
+ "sold_out_text_n2pggic14ge_html": "Sold out",
+ "quick_shop_text_n2pggic14ge_html": "Quick Shop",
+ "sold_text_n2pggic14ge_html": "Sold",
+ "sale_text_n2pggic14ge_html": "Sale",
+ "sale_badge_n2pggic14ge_html": "-33%",
+ "countdown_title_n2pggic14ge_html": " ",
+ "no_product_item_n2pggic14ge_html": "There are no product yet!",
  "headingtext_tt2knq13uyd_html": "Our Product Range\n<br>",
  "text_week_n2pggic14ge_html": "[%-W] week%!W",
  "text_day_n2pggic14ge_html": "[%-d] day%!D",
