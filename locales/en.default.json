@@ -661,6 +661,27 @@
       "text_minute_5m3fflkjvh_html": "[%-M] minute%!M",
       "text_second_5m3fflkjvh_html": "[%-S] second%!S",
       "saleOff_5m3fflkjvh_html": "{{sale}}% Off"
+    },
+    "ecom-our-products-page": {
+      "product_option_swatch_ot7mrc7gct_html": "Color",
+      "view_more_text_ot7mrc7gct_html": "View more",
+      "add_to_cart_ot7mrc7gct_html": "Add to cart ",
+      "product_unavailable_ot7mrc7gct_html": "Unavailable",
+      "product_soldout_ot7mrc7gct_html": "Sold out",
+      "added_cart_text_ot7mrc7gct_html": "Added to cart",
+      "added_cart_message_ot7mrc7gct_html": "Added to cart",
+      "pre_order_ot7mrc7gct_html": "Pre order",
+      "sold_out_text_ot7mrc7gct_html": "Sold out",
+      "quick_shop_text_ot7mrc7gct_html": "Quick Shop",
+      "sale_badge_ot7mrc7gct_html": "Save {{sale}}",
+      "countdown_title_ot7mrc7gct_html": " ",
+      "no_product_item_ot7mrc7gct_html": "There are no product yet!",
+      "text_week_ot7mrc7gct_html": "[%-W] week%!W",
+      "text_day_ot7mrc7gct_html": "[%-d] day%!D",
+      "text_hour_ot7mrc7gct_html": "[%-H] hr%!H",
+      "text_minute_ot7mrc7gct_html": "[%-M] min%!M",
+      "text_second_ot7mrc7gct_html": "[%-S] sec%!S",
+      "Savesale_ot7mrc7gct_html": "Save {{sale}}"
     }
   },
   "localization": {
