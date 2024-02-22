@@ -18,11 +18,19 @@
             "text": "Mail Us: codexdrugs@gmail.com",
             "link": "mailto:codexdrugs@gmail.com"
           }
+        },
+        "announcement_MhhJPC": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING ON ORDERS ABOVE RS. 500",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement_9teBwQ",
-        "announcement_AnheWG"
+        "announcement_AnheWG",
+        "announcement_MhhJPC"
       ],
       "settings": {
         "color_scheme": "scheme-36a74f92-6883-4910-97c5-1c1d5796f49d",
