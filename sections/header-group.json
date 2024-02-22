@@ -15,8 +15,8 @@
         "announcement_AnheWG": {
           "type": "announcement",
           "settings": {
-            "text": "Mail : onlinesales@vitalcare.co.in",
-            "link": ""
+            "text": "Mail Us: onlinesales@vitalcare.co.in",
+            "link": "mailto:onlinesales@vitalcare.co.in"
           }
         }
       },
