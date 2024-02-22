@@ -2,28 +2,36 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
+    "announcement_bar_b7XhfW": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_HUa77J": {
+        "announcement_9teBwQ": {
           "type": "announcement",
           "settings": {
-            "text": "",
+            "text": "Phone : +91 7574003177",
+            "link": ""
+          }
+        },
+        "announcement_AnheWG": {
+          "type": "announcement",
+          "settings": {
+            "text": "Mail : onlinesales@vitalcare.co.in",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_HUa77J"
+        "announcement_9teBwQ",
+        "announcement_AnheWG"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-36a74f92-6883-4910-97c5-1c1d5796f49d",
         "show_line_separator": true,
-        "show_social": false,
+        "show_social": true,
         "auto_rotate": false,
         "change_slides_speed": 5,
         "enable_country_selector": false,
-        "enable_language_selector": false
+        "enable_language_selector": true
       }
     },
     "header": {
@@ -46,7 +54,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "announcement_bar_b7XhfW",
     "header"
   ]
 }
