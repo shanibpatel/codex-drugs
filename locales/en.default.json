@@ -8,7 +8,7 @@
       "login_form_error": "Wrong password!",
       "login_form_submit": "Enter",
       "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"link underlined-link\">Log in here<\/a>",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "powered_by_shopify_html": "Design & Developed by {{ NoobXMarketing }}"
     },
     "social": {
       "alt_text": {
@@ -682,6 +682,24 @@
       "text_minute_ot7mrc7gct_html": "[%-M] min%!M",
       "text_second_ot7mrc7gct_html": "[%-S] sec%!S",
       "Savesale_ot7mrc7gct_html": "Save {{sale}}"
+    },
+    "ecom-default-template-quickview": {
+      "textcontent_hej9vk0uggt_html": "(100+ rating)",
+      "product_single_sale_text_igi21p1nxm_html": "{price}% OFF",
+      "product_single_sold_text_igi21p1nxm_html": "Sold out",
+      "instock_text_phpd2kxein8_html": "26 items left in stock",
+      "outstock_text_phpd2kxein8_html": "Outstock",
+      "inventory_text_phpd2kxein8_html": "{quantity} items left in stock",
+      "preorder_text_phpd2kxein8_html": "Preorder text",
+      "product_option_swatch_mopm0qumv6_html": "Color",
+      "add_to_cart_boa4cnsk0z_html": "Add to cart",
+      "pre_order_boa4cnsk0z_html": "Pre Order",
+      "product_unavailable_boa4cnsk0z_html": "Unavailable",
+      "out_stock_boa4cnsk0z_html": "Out stock",
+      "added_cart_text_boa4cnsk0z_html": "Added to cart",
+      "added_cart_message_boa4cnsk0z_html": "Added to cart",
+      "headingtext_ke5l5ure39_html": "<b>Guarantee safe<\/b> <i>&amp; secure checkout<\/i>",
+      "headingtext_qx9733j8ss_html": "Share:"
     }
   },
   "localization": {
@@ -833,6 +851,16 @@
       "max_characters": "{{ max_chars }} characters max",
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "autocomplete_powered_by_google": "Design & Developed by {{ NoobXMarketing }}"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "Design & Developed by {{ NoobXMarketing }}"
     }
   }
 }
