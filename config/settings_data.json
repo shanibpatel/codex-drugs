@@ -417,7 +417,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".img {pointer-events: none;}"
+      ".ecom-core.ecom-0sqcxyttht1q .ecom-base-image .ecom-image-picture img {pointer-events: none;}"
     ]
   }
 }
