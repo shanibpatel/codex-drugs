@@ -417,7 +417,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-
+      ".img {pointer-events: none;}"
     ]
   }
 }
