@@ -386,12 +386,6 @@
       "sale_badge_n2pggic14ge_html": "-33%",
       "countdown_title_n2pggic14ge_html": " ",
       "no_product_item_n2pggic14ge_html": "There are no product yet!",
-      "Enteryouemail_4mfa29fapzl_html": "Enter you email",
-      "submit_title_4mfa29fapzl_html": " ",
-      "xv055fd443333722020221222030199203143434_4mfa29fapzl_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 512 512\" fill=\"currentColor\"><path d=\"M335 408.1C330.3 404.3 328 398.2 328 392s2.344-12.28 7.031-16.97L430.1 280H24C10.75 280 0 269.2 0 255.1C0 242.7 10.75 232 24 232h406.1l-95.03-95.03c-9.375-9.375-9.375-24.56 0-33.94s24.56-9.375 33.94 0l136 136c9.375 9.375 9.375 24.56 0 33.94l-136 136C359.6 418.3 344.4 418.3 335 408.1z\"><\/path><\/svg>",
-      "success_message_4mfa29fapzl_html": "Subscribed successfully!",
-      "error_title_4mfa29fapzl_html": "Opps!. An error has occurred",
-      "error_already_4mfa29fapzl_html": "Email have already subscribed!",
       "headingtext_tt2knq13uyd_html": "Our Product Range\n<br>",
       "text_week_n2pggic14ge_html": "[%-W] week%!W",
       "text_day_n2pggic14ge_html": "[%-d] day%!D",
@@ -419,12 +413,7 @@
       "sale_hd6hog77se9_html": "-{{sale}}%",
       "headingtext_z719gbgci98_html": "Revitalize Your Body, Mind, and Soul with Herbal.",
       "buttoncontent_vpp6dwhum_html": "Contact Us",
-      "headingtext_k30c1z6lw6_html": "Recent Activity",
-      "textcontent_no082987h8q_html": "Codex Drugs was founded with the mission of delivering reliable and secure Ayurvedic remedies to humanity.\n\n\n\n\n\n\n",
-      "headingtext_qrr26p2y7h_html": "About Us",
-      "headingtext_pdp8dfo3ko_html": "Help Links",
-      "headingtext_32imhv14ig3_html": "More",
-      "textcontent_nb7smoor7la_html": "© 2022 EComposer All Rights Reserved by The4."
+      "headingtext_k30c1z6lw6_html": "Recent Activity"
     },
     "ecom-product-product": {
       "product_single_sale_text_1wt5zw3s1ej_html": "Sale",
