@@ -59,10 +59,21 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_liquid_Kigjhf": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<style>\n   \n.bar {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    margin-left: 175px;\n}\n\n\n.topbar {\n    width: 100%;\n    height: 60px;\n    background-color: #00000;\n    border-bottom-left-radius:60px ;\n}\n\n<\/style>\n\n    <div class=\"bar\">\n    <div class=\"topbar\"><\/div>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "announcement_bar_b7XhfW",
-    "header"
+    "header",
+    "custom_liquid_Kigjhf"
   ]
 }
