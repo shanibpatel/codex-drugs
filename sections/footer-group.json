@@ -1,1 +1,72 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"image_ihzW4x":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/43470e4d-c320-44bd-8dad-6348fb2289e0.png","image_width":105,"alignment":""}},"text_drWNh8":{"type":"text","disabled":true,"settings":{"heading":"","subtext":"<p>Codex Drugs was founded with the mission of delivering reliable and secure Ayurvedic remedies to humanity.<\/p>"}},"link_list_rbXxak":{"type":"link_list","settings":{"heading":"<strong>MENU<\/strong>","menu":"main-menu"}},"link_list_RQNCEy":{"type":"link_list","settings":{"heading":"<strong>QUICK LINKS<\/strong>","menu":"footer"}},"text_PbwbLE":{"type":"text","settings":{"heading":"<strong>CONTACT US<\/strong>","subtext":"<p>207, SIGNET HUB, AXAR CHOWK,                            MUJMAHUDA RD, VADODARA, GUJARAT 390012<\/p>"}}},"block_order":["image_ihzW4x","text_drWNh8","link_list_rbXxak","link_list_RQNCEy","text_PbwbLE"],"settings":{"color_scheme":"scheme-2","newsletter_enable":true,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":true,"margin_top":0,"padding_top":60,"padding_bottom":60}}},"order":["footer"]}
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_ihzW4x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG-20240222-WA0064.jpg",
+            "image_width": 145,
+            "alignment": ""
+          }
+        },
+        "text_drWNh8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "subtext": "<p>Codex Drugs was founded with the mission of delivering reliable and secure Ayurvedic remedies to humanity.<\/p>"
+          }
+        },
+        "link_list_rbXxak": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>MENU<\/strong>",
+            "menu": "main-menu"
+          }
+        },
+        "link_list_RQNCEy": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>QUICK LINKS<\/strong>",
+            "menu": "footer"
+          }
+        },
+        "text_PbwbLE": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>CONTACT US<\/strong>",
+            "subtext": "<p>207, SIGNET HUB, AXAR CHOWK,                            MUJMAHUDA RD, VADODARA, GUJARAT 390012<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_ihzW4x",
+        "text_drWNh8",
+        "link_list_rbXxak",
+        "link_list_RQNCEy",
+        "text_PbwbLE"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
