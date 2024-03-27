@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-03-27 13:13:26
+ At 2024-03-27 13:14:52
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -542,72 +542,6 @@
  {% assign other_option_layout = 'dropdown' %}
  {% capture product_picker%}
  
- {%- if product.available and product.has_only_default_variant == false-%}
- {% if quickshop_layout != 'full' and product.options.size > 1%}
- {% assign hide_quickshop = false %}
- {% endif %}
- {% assign hide_quickshop = true %}
- {%- if enable_hook -%}
- {% capture the_ecom_hook %}
- {% render 'ecom_product_loop_before_variant', product: product %}
- {% endcapture %}
- {% unless the_ecom_hook contains 'Liquid error' %}
- {{ the_ecom_hook }}
- {% endunless %}
- {%- endif -%}
- <div class="ecom-collection__product-variants" data-picker-type="dropdown">
- <button class="ecom-collection__product-close"></button>
- <form class="ecom-collection__product-form ecom-product-form" product_id="{{product.id}}" data-product_id="{{product.id}}" data-product-id="{{product.id}}" data-handle="{{product.handle}}">
- <div class="ecom-child-element" >
- {% assign variant_selected = product.first_available_variant%}
- 
- 
- <div class="ecom-collection__product-quick-shop-wrapper {% if hide_quickshop %} ecom-collection__product-quick-shop--force-show{% endif %}">
- <div class="ecom-collection__product-picker-selection" style="">
- <select name="variant_id" data-product-id="{{product.id}}" id="ecom-variant-selector-{{product.id}}-ecom-1asrtrdd50l">
- {% for variant in product.variants %}
- <option value="{{variant.id}}">{{variant.title}}</option>
- {% endfor %}
- </select>
- </div>
- </div>
- </div>
- {%- if product.requires_selling_plan == true and view_more_only != true -%}
- 
- <div
- class="ecom-button-default ecom-collection__product-form__actions">
- <a class="ecom-collection__product-form__actions--view-more ecom-collection__product-view-more-before ecom-child-element"
- 
- target=""
- href="{%- if is_collection-%}{{- product.url | within: collection -}}{% else %}{{- product.url -}}{%-endif-%}"
- title="{{ product.title | escape }}">
- 
- <span class="ecom-collection__product-view-more-text">
- {{ 'sections.ecom-product-product.view_more_text_1asrtrdd50l_html' | t }}
- </span>
- </a>
- </div>
- 
- {%- else -%}
- <div class="ecom-collection__product-quick-shop-add-to-cart-wrapper {% if hide_quickshop or view_more_only %} ecom-collection__product-quick-shop--force-show{% endif %}">
- 
- </div>
- {%- endif -%}
- </form> {% comment %} End form {% endcomment %}
- <script class="product-json" type="application/json">
- {%- render "ecom_product_json", product: product -%}
- </script>
- </div>
- {%- if enable_hook -%}
- {% capture the_ecom_hook %}
- {% render 'ecom_product_loop_after_variant', product: product %}
- {% endcapture %}
- {% unless the_ecom_hook contains 'Liquid error' %}
- {{ the_ecom_hook }}
- {% endunless %}
- {%- endif -%}
- {% endif %}
- 
  {% endcapture%}
  {% capture product_actions%}
  <div class="ecom-collection__product--actions" data-layout="{{quickshop_layout}}">
@@ -615,7 +549,7 @@
  <div
  class="ecom-button-default ecom-collection__product-form__actions "
  
- >
+ style="display:none;">
  {%- if enable_hook -%}
  {% capture the_ecom_hook %}
  {% render 'ecom_product_loop_before_cart_button', product: product %}
@@ -661,6 +595,14 @@
  {%- endif -%}
  {% else %}
  
+ 
+ <a href="{%- if is_collection-%}{{- product.url | within: collection -}}{% else %}{{- product.url -}}{%-endif-%}" class="ecom-collection__product-form__actions--view-more ecom-collection__product-view-more-before
+ ecom-child-element" title="{{ product.title | escape }}" target="" >
+ 
+ <span class="ecom-collection__product-view-more-text">
+ {{ 'sections.ecom-product-product.view_more_text_1asrtrdd50l_html' | t }}
+ </span>
+ </a>
  
  
  {% endif %}
@@ -841,9 +783,23 @@
  
  <div class="ecom-collection__product-prices ecom-child-element" >
  
- {%- assign target = product.selected_or_first_available_variant -%}
+ {% if product.has_only_default_variant %}
  <div class="ecom-collection__product-price-wrapper">
- <span class="ecom-collection__product-price{% if product.compare_at_price > product.price %} ecom-collection__product-price--sale{% endif %}">{% if settings.currency_code_enabled == true %} {{target.price | money_with_currency }} {% else %} {{target.price | money }} {% endif %}</span>
+ <span class="ecom-collection__product-price{% if product.compare_at_price > product.price %} ecom-collection__product-price--sale{% endif %}">{% if settings.currency_code_enabled == true %} {{product.price_min | money_with_currency }} {% else %} {{product.price_min | money }} {% endif %}</span>
+ <span class="ecom-collection__product-price--regular ecom-collection__product--compare-at-price"{%- if product.compare_at_price == nil or product.compare_at_price <= product.price -%} style="display:none; content:'1'" {%- endif -%}>{% if settings.currency_code_enabled == true %} {{ product.compare_at_price_max | money_with_currency }} {% else %} {{ product.compare_at_price_max | money }} {% endif %}</span>
+ {%- comment -%}
+ <span class="ecom-collection__product-price--bage-sale">
+ {% assign sale = product.compare_at_price_max | minus: product.price | times: 100 | divided_by: product.compare_at_price_max | times: 100 | money %}
+ {{ 'sections.ecom-product-product.sale_badge_1asrtrdd50l_html' | t: sale:sale }}
+ </span>
+ {%- endcomment -%}
+ </div>
+ 
+ {% else %}
+ 
+ <div class="ecom-collection__product-price-wrapper">
+ {%- assign target = product.selected_or_first_available_variant -%}
+ <span class="ecom-collection__product-price{% if target.compare_at_price > target.price %} ecom-collection__product-price--sale{% endif %}">{% if settings.currency_code_enabled == true %} {{ target.price | money_with_currency }} {% else %} {{ target.price | money }} {% endif %}</span>
  <span
  class="ecom-collection__product-price--regular ecom-collection__product--compare-at-price"
  {%- if product.compare_at_price == nil or product.compare_at_price <= product.price -%} style="display:none" {% endif %}
@@ -852,6 +808,8 @@
  </span>
  </div>
  
+ 
+ {% endif %}
  
  </div>
  
