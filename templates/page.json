@@ -1,1 +1,88 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":28,"padding_bottom":28}},"image_with_text_xdmnAM":{"type":"image-with-text","blocks":{"heading_Ni4e8j":{"type":"heading","settings":{"heading":"<strong>About Codex Drugs<\/strong>","heading_size":"h1"}},"text_GMVk3m":{"type":"text","settings":{"text":"<p>Located in the prime location of  <strong>Vadodara, Gujarat, India<\/strong>, Codex Drugs Pvt. Ltd. is engaged in the contract manufacturing of quality assured Herbal products and Nutraceuticals. Gujarat is a hub for pharmaceuticals and related products, with more than 35% of production of these products in India being carried out here.<\/p>","text_style":"subtitle"}}},"block_order":["heading_Ni4e8j","text_GMVk3m"],"settings":{"image":"shopify:\/\/shop_images\/About_Codex.png","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"middle","desktop_content_alignment":"center","content_layout":"overlap","section_color_scheme":"scheme-3","color_scheme":"scheme-2","image_behavior":"ambient","mobile_content_alignment":"center","padding_top":36,"padding_bottom":36}},"rich_text_hqqwAz":{"type":"rich-text","blocks":{"heading_dtR8X4":{"type":"heading","settings":{"heading":"<strong>Why Codex?<\/strong>","heading_size":"h0"}},"text_qDiRgW":{"type":"text","settings":{"text":"<h3><strong>Herbal (Ayurvedic) & Nutraceuticals Products:   <\/strong><\/h3><p><strong>        <\/strong>Our Herbal and Nutraceutical products are manufactured, tested, and packed under the supervision of Expert technical persons approved by the Government. From the procurement of raw materials to the release of the final product, our technical personnel are involved at all critical levels to ensure the production of a quality product.<\/p><h3><strong>Commitment to Quality:<\/strong> <\/h3><p>At Codex, quality is our philosophy since our inception. Our team comprises of persons from Quality Assurance (QA), Quality Control (QC), senior personnel from the trade, and former FDA personnel. This multidimensional approach ensures that the quality of our products is taken care of from various perspectives.<\/p><h3><strong>Inventory Management and Hygiene:<\/strong><\/h3><p><strong> <\/strong>We have proper inventory facilities to maintain stocks and ensure timely delivery of products. Hygiene and sanitization of the product handlers and storage areas are given immense emphasis to ensure that the quality and effectiveness of our products are not compromised in any way.<\/p><h3><strong>Dedicated Logistics Team:<\/strong><\/h3><p> Our logistics team works with complete dedication to ensure that the consignments reach their destinations safely and within the stipulated time period. <\/p><h3><strong>R & D Activities:<\/strong><\/h3><p><strong> <\/strong>At Codex we emphasize on R & D activities. Apart from scientific studies, we understand the importance of old manuscripts and consider usage of herbs by Rishis since ages.<\/p>"}}},"block_order":["heading_dtR8X4","text_qDiRgW"],"custom_css":[".gradient {--gradient-background: linear-gradient( to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ); background: var(--gradient-background), url(https:\/\/cdn.shopify.com\/s\/files\/1\/0688\/1532\/3371\/files\/ayurveda.webp?v=1707574163) !important; background-attachment: fixed; background-color: transparent !important; background-position: center center !important; background-size: cover !important; background-repeat: no-repeat !important;}"],"settings":{"desktop_content_position":"center","content_alignment":"left","color_scheme":"scheme-4","full_width":true,"padding_top":40,"padding_bottom":40}}},"order":["main","image_with_text_xdmnAM","rich_text_hqqwAz"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_xdmnAM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ni4e8j": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>About Codex Drugs<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_GMVk3m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Located in the prime location of  <strong>Vadodara, Gujarat, India<\/strong>, Codex Drugs Pvt. Ltd. is engaged in the contract <strong>Manufacturing and Marketing<\/strong> of quality assured Herbal products and Nutraceuticals. <\/p><p>Gujarat is a hub for pharmaceuticals and related products, with more than 35% of production of these products in India being carried out here. Codex is the part of it.<\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ni4e8j",
+        "text_GMVk3m"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About_Codex.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-2",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_hqqwAz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dtR8X4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Why Codex?<\/strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text_qDiRgW": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Herbal (Ayurvedic) & Nutraceuticals Products:   <\/strong><\/h3><p><strong>        <\/strong>Our Herbal and Nutraceutical products are manufactured, tested, and packed under the supervision of Expert technical persons approved by the Government. From the procurement of raw materials to the release of the final product, our technical personnel are involved at all critical levels to ensure the production of a quality product.<\/p><h3><strong>Commitment to Quality:<\/strong> <\/h3><p>At Codex, quality is our philosophy since our inception. Our team comprises of persons from Quality Assurance (QA), Quality Control (QC), senior personnel from the trade, and former FDA personnel. This multidimensional approach ensures that the quality of our products is taken care of from various perspectives.<\/p><h3><strong>Inventory Management and Hygiene:<\/strong><\/h3><p><strong> <\/strong>We have proper inventory facilities to maintain stocks and ensure timely delivery of products. Hygiene and sanitization of the product handlers and storage areas are given immense emphasis to ensure that the quality and effectiveness of our products are not compromised in any way.<\/p><h3><strong>Dedicated Logistics Team:<\/strong><\/h3><p> Our logistics team works with complete dedication to ensure that the consignments reach their destinations safely and within the stipulated time period. <\/p><h3><strong>R & D Activities:<\/strong><\/h3><p><strong> <\/strong>At Codex we emphasize on R & D activities. Apart from scientific studies, we understand the importance of old manuscripts and consider usage of herbs by Rishis since ages.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dtR8X4",
+        "text_qDiRgW"
+      ],
+      "custom_css": [
+        ".gradient {--gradient-background: linear-gradient( to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ); background: var(--gradient-background), url(https:\/\/cdn.shopify.com\/s\/files\/1\/0688\/1532\/3371\/files\/ayurveda.webp?v=1707574163) !important; background-attachment: fixed; background-color: transparent !important; background-position: center center !important; background-size: cover !important; background-repeat: no-repeat !important;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_xdmnAM",
+    "rich_text_hqqwAz"
+  ]
+}
