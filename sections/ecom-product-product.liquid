@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-03-27 13:14:52
+ At 2024-03-29 09:34:54
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -305,14 +305,6 @@
  {%- endif -%}
  </div>
  
- <div class="ecom-product-single__price--regular" {%- if target.compare_at_price == nil or target.compare_at_price < target.price -%} style="display:none" {% endif %}>
- {%- if settings.currency_code_enabled -%}
- {{target.compare_at_price | money_with_currency}}
- {%- else -%}
- {{target.compare_at_price | money }}
- {%- endif -%}
- </div>
- 
  {%- capture taxes_text -%}{%- endcapture -%}
  {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
  {% if taxes_text %}
@@ -339,7 +331,22 @@
  {{ 'sections.ecom-product-product.product_single_sold_text_1wt5zw3s1ej_html' | t }}
  </span>
  </div>
- </div></div><div class="ecom-product-single-afterpay">
+ </div></div><div class="ecom-product_ground-price">
+ <small class="ecom-unit-price" {% if product.selected_or_first_available_variant.unit_price_measurement == nil %}style="display: none;" {% endif %}">
+ <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+ <span class="price-item price-item--last">
+ <span class="ecom-ground-price_unit-price">{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
+ <span aria-hidden="true">/</span>
+ <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+ <span class="ecom-ground-price_unit-price-measurement">
+ {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+ {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
+ {%- endif -%}
+ {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
+ </span>
+ </span>
+ </small>
+ </div><div class="ecom-product-single-afterpay">
  
  </div></div></div></div></div> <div class="ecom-block ecom-core core__block ecom-ppspnocmnh" data-core-is="block"><div class="ecom-element ecom-product-single ecom-product-single__variant-picker" deep="2"><div class="ecom-product-single__variant-picker-wrapper ecom_not_hide_dropdown_arrow"><div class="ecom-product-single__variant-picker-container {% if product.has_only_default_variant%} ecom-product-single__variant-picker--only-default{% endif%}" data-picker-type="dropdown" data-ecom-placeholder="">
  {% assign ecom_has_variant_picker = true%}
@@ -862,13 +869,8 @@
  "name": "PRODUCT",
  "locales": {
  "en": {
- "product_single_sale_text_1wt5zw3s1ej_html": "Sale",
+ "product_single_sale_text_1wt5zw3s1ej_html": "Sale 10 to 20%",
  "product_single_sold_text_1wt5zw3s1ej_html": "Sold out",
- "view_more_text_1asrtrdd50l_html": "View more",
- "sold_text_1asrtrdd50l_html": "Sold",
- "sale_text_1asrtrdd50l_html": "Sale",
- "sale_badge_1asrtrdd50l_html": "{{sale}}% Off",
- "no_product_item_1asrtrdd50l_html": "There are no product yet!",
  "delivery_text_7sddtsencig_html": "Estimated delivery between [date_start] - [date_end]",
  "hour_7sddtsencig_html": "hour",
  "delivery_minute_7sddtsencig_html": "minute(s)",
@@ -931,6 +933,11 @@
  "textcontent_zfi69yeaxt_html": "\u201cI think the biggest indicator of how good a company is, is whether or not you'd feel comfortable giving the product to your own family, and I can tell you unequivocally that I feel very confident giving these products to the people I love.\u201d",
  "headingtext_x8zzjpanhh_html": "What Our Customers Are Saying",
  "headingtext_nm66rk5xmgb_html": "Our Featured Products",
+ "view_more_text_1asrtrdd50l_html": "View more",
+ "sold_text_1asrtrdd50l_html": "Sold",
+ "sale_text_1asrtrdd50l_html": "Sale",
+ "sale_badge_1asrtrdd50l_html": "{{sale}}% Off",
+ "no_product_item_1asrtrdd50l_html": "There are no product yet!",
  "text_week_1asrtrdd50l_html": "[%-W] week%!W",
  "text_day_1asrtrdd50l_html": "[%-d] day%!D",
  "text_hour_1asrtrdd50l_html": "[%-H] hour%!H",
