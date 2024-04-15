@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-03-29 09:34:54
+ At 2024-04-15 12:39:41
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -322,11 +322,9 @@
  <div class="ecom-product-single__price--badges">
  {%- assign savings = target.compare_at_price | minus: target.price | times: 100.0 | divided_by: target.compare_at_price | round -%}
  
- {%- if target.compare_at_price != nil and target.compare_at_price > target.price and target.available == true -%}
- <span class="ecom-product-single__price--badges-sale" data-text=" {{ 'sections.ecom-product-product.product_single_sale_text_1wt5zw3s1ej_html' | t }}" data-sale="{{savings}}" data-type="percent">
+ <span class="ecom-product-single__price--badges-sale" data-have-sale="{%- unless target.compare_at_price == nil or target.compare_at_price <= target.price or target.available != true -%}true{%endunless%}" data-text=" {{ 'sections.ecom-product-product.product_single_sale_text_1wt5zw3s1ej_html' | t }}" data-sale="{{savings}}" data-type="percent" style="{%- unless target.compare_at_price == nil or target.compare_at_price <= target.price or target.available != true -%} display: none;{%endunless%}">
  {{ 'sections.ecom-product-product.product_single_sale_text_1wt5zw3s1ej_html' | t }}
  </span>
- {% endif %}
  <span class="ecom-product-single__price--badges-sold-out" {% if target.available %} style="display:none" {% endif %}>
  {{ 'sections.ecom-product-product.product_single_sold_text_1wt5zw3s1ej_html' | t }}
  </span>
@@ -578,8 +576,10 @@
  </span>
  </a>
  
+ {% comment %}
  {% elsif product.available == false %}
  
+ {% endcomment %} 
  {% elsif product.has_only_default_variant %}
  {%- if product.requires_selling_plan == true and view_more_only != true -%}
  
@@ -706,7 +706,6 @@
  <span class="ecom-collection__product-badge--sale" aria-hidden="true" style="{%- unless product.compare_at_price > product.price and product.available -%}display: none;{%- endunless -%}">
  {{ 'sections.ecom-product-product.sale_text_1asrtrdd50l_html' | t }}
  </span>
- 
  {% if badge_tags %}
  {% for badge in badge_tags %}
  {% for original_tag in product.tags %}
@@ -734,19 +733,18 @@
  {%else%}
  {%- assign sale = null %}
  {%- endif -%}
- 
  <span class="ecom-collection__product-price--bage-sale" style="{% unless sale %}display:none{% endunless %}">
  {{ 'sections.ecom-product-product.sale_badge_1asrtrdd50l_html' | t: sale:sale }}
  </span>
- 
  {%- endif -%}
  </div>
  </a>
  
  
+ <div class="ecom-collection__product-group-button-action " style="justify-content: start">
  
  
- 
+ </div>
  </div>
  <div class="ecom-collection__product-item--information">
  <div class="ecom-collection__product-item--information-wrapper ecom-flex ecom-column">
