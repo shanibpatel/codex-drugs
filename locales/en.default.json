@@ -673,15 +673,11 @@
       "sold_out_text_alv24eapmtp_html": "Sold out",
       "quick_shop_text_alv24eapmtp_html": "Quick Shop",
       "sold_text_alv24eapmtp_html": "Sold",
-      "sale_text_alv24eapmtp_html": "Sale",
+      "sale_text_alv24eapmtp_html": "sale ",
       "sale_badge_alv24eapmtp_html": "-33%",
       "countdown_title_alv24eapmtp_html": " ",
       "no_product_item_alv24eapmtp_html": "There are no product yet!",
       "text_week_alv24eapmtp_html": "[%-W] week%!W",
-      "text_day_alv24eapmtp_html": "[%-d] day%!D",
-      "text_hour_alv24eapmtp_html": "[%-H] hr%!H",
-      "text_minute_alv24eapmtp_html": "[%-M] min%!M",
-      "text_second_alv24eapmtp_html": "[%-S] sec%!S",
       "33_alv24eapmtp_html": "-33%"
     },
     "ecom-default-template-quickview": {
