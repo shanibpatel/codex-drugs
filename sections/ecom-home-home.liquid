@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-04-15 16:50:22
+ At 2024-04-15 18:15:06
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -31,7 +31,7 @@
  -%}
  
  
- {%- capture limit-%}3{% endcapture %}
+ {%- capture limit-%}5{% endcapture %}
  {%- if limit == blank -%}
  {% assign limit = 12 %}
  {% else %}
@@ -49,7 +49,7 @@
  {% assign is_collection = true %}
  
  {% capture quickshop_layout%}full{% endcapture %}
- {% capture product_style%}undefined{% endcapture%}
+ {% capture product_style%}vertical{% endcapture%}
  {%- assign view_more_only = false -%}
  {% capture product_layout %}grid{% endcapture %}
  {% assign check_min = 0%}
@@ -322,9 +322,9 @@
  -%}
  <div class="ecom-collection__product-media--container">
  <div
- class="ecom-child-element ecom-collection__product-media ecom-collection__product-media--adapt
+ class="ecom-child-element ecom-collection__product-media ecom-collection__product-media--square
  {% if product.media[1] != nil %}ecom-collection__product-media--hover-effect{% endif %}"
- style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"
+ 
  
  >
  <img srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
@@ -363,9 +363,9 @@
  </div>
  {% else %}
  <div class="ecom-collection__product-media--container">
- <div class="ecom-child-element ecom-collection__product-media ecom-collection__product-media--adapt"
+ <div class="ecom-child-element ecom-collection__product-media ecom-collection__product-media--square"
  
- style="padding-bottom: 85%;"
+ 
  >
  {{ 'product-1' | placeholder_svg_tag: 'ecom-colection__product-svg-placeholder' }}
  </div>
