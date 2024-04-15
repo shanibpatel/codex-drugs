@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-04-15 06:57:32
+ At 2024-04-15 12:19:23
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -80,7 +80,7 @@
  {% assign other_option_layout = 'radio' %}
  {% capture product_picker%}
  
- {%- if product.available and product.has_only_default_variant == false-%}
+ {%- if product.has_only_default_variant == false-%}
  {% if quickshop_layout != 'full' and product.options.size > 1%}
  {% assign hide_quickshop = false %}
  {% endif %}
@@ -236,6 +236,7 @@
  {%- endif -%}
  {% if view_more_only %}
  
+ {% comment %}
  {% elsif product.available == false %}
  
  <div class="ecom-collection__product-form__actions--soldout ecom-collection__product-sold-out-before ecom-child-element"
@@ -247,6 +248,7 @@
  </span>
  </div>
  
+ {% endcomment %} 
  {% elsif product.has_only_default_variant %}
  {%- if product.requires_selling_plan == true and view_more_only != true -%}
  
@@ -709,6 +711,7 @@
  </span>
  </a>
  
+ {% comment %}
  {% elsif product.available == false %}
  
  <div class="ecom-collection__product-form__actions--soldout ecom-collection__product-sold-out-before ecom-child-element"
@@ -720,6 +723,7 @@
  </span>
  </div>
  
+ {% endcomment %} 
  {% elsif product.has_only_default_variant %}
  {%- if product.requires_selling_plan == true and view_more_only != true -%}
  
@@ -1042,6 +1046,7 @@
  "name": "home",
  "locales": {
  "en": {
+ "headingtext_tt2knq13uyd_html": "Our Product Range\n<br>",
  "product_option_swatch_n2pggic14ge_html": "Color",
  "add_to_cart_n2pggic14ge_html": "Add to cart ",
  "product_unavailable_n2pggic14ge_html": "Unavailable",
@@ -1055,18 +1060,6 @@
  "sale_badge_n2pggic14ge_html": "-33%",
  "countdown_title_n2pggic14ge_html": " ",
  "no_product_item_n2pggic14ge_html": "There are no product yet!",
- "product_option_swatch_hd6hog77se9_html": "Color",
- "view_more_text_hd6hog77se9_html": "View more",
- "sold_out_text_hd6hog77se9_html": "Sold out",
- "added_cart_text_hd6hog77se9_html": "Added to cart",
- "added_cart_message_hd6hog77se9_html": "Added to cart",
- "pre_order_hd6hog77se9_html": "Pre order",
- "add_to_cart_hd6hog77se9_html": "Add to cart ",
- "sold_text_hd6hog77se9_html": "Sold",
- "sale_text_hd6hog77se9_html": "Sale",
- "sale_badge_hd6hog77se9_html": "-{{sale}}%",
- "countdown_title_hd6hog77se9_html": "Hurry up! The sale will end on",
- "headingtext_tt2knq13uyd_html": "Our Product Range\n<br>",
  "text_week_n2pggic14ge_html": "[%-W] week%!W",
  "text_day_n2pggic14ge_html": "[%-d] day%!D",
  "text_hour_n2pggic14ge_html": "[%-H] hr%!H",
@@ -1085,6 +1078,17 @@
  "headingtext_0yxd5ial58xm_html": "Our&nbsp;<div>Bestsellers<div><\/div><\/div>",
  "textcontent_61ek89r28ab_html": "Explore Our Exquisite Herbal Capsule Collection.",
  "buttoncontent_hjti0f1abnq_html": "Shop More",
+ "product_option_swatch_hd6hog77se9_html": "Color",
+ "view_more_text_hd6hog77se9_html": "View more",
+ "sold_out_text_hd6hog77se9_html": "Sold out",
+ "added_cart_text_hd6hog77se9_html": "Added to cart",
+ "added_cart_message_hd6hog77se9_html": "Added to cart",
+ "pre_order_hd6hog77se9_html": "Pre order",
+ "add_to_cart_hd6hog77se9_html": "Add to cart ",
+ "sold_text_hd6hog77se9_html": "Sold",
+ "sale_text_hd6hog77se9_html": "Sale",
+ "sale_badge_hd6hog77se9_html": "-{{sale}}%",
+ "countdown_title_hd6hog77se9_html": "Hurry up! The sale will end on",
  "text_week_hd6hog77se9_html": "[%-W] week%!W",
  "text_day_hd6hog77se9_html": "[%-d] day%!D",
  "text_hour_hd6hog77se9_html": "[%-H] hr%!H",
