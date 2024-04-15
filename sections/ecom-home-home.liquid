@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-03-28 14:00:35
+ At 2024-04-15 06:57:32
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -178,7 +178,7 @@
  {%- if product.requires_selling_plan == true and view_more_only != true -%}
  
  {%- else -%}
- <div class="ecom-collection__product-quick-shop-add-to-cart-wrapper {% if hide_quickshop or view_more_only %} ecom-collection__product-quick-shop--force-show{% endif %}">
+ <div class="ecom-collection__product-quick-shop-add-to-cart-wrapper {% if hide_quickshop or view_more_only %} ecom-collection__product-quick-shop--force-show{% endif %} ">
  <div class="ecom-collection__product-form__actions ">
  
  <button type="button" class="ecom-child-element ecom-collection__product-submit ecom-ajax-cart-submit ecom-collection__product-simple-add-to-cart
@@ -379,7 +379,6 @@
  <span class="ecom-collection__product-badge--sale" aria-hidden="true" style="{%- unless product.compare_at_price > product.price and product.available -%}display: none;{%- endunless -%}">
  {{ 'sections.ecom-home-home.sale_text_n2pggic14ge_html' | t }}
  </span>
- 
  {% if badge_tags %}
  {% for badge in badge_tags %}
  {% for original_tag in product.tags %}
@@ -407,18 +406,17 @@
  {%else%}
  {%- assign sale = null %}
  {%- endif -%}
- 
  <span class="ecom-collection__product-price--bage-sale" style="{% unless sale %}display:none{% endunless %}">
  {{ 'sections.ecom-home-home.sale_badge_n2pggic14ge_html' | t: sale:sale }}
  </span>
- 
  {%- endif -%}
  </div>
  </a>
  
- <div class="ecom-collection__product-group-button-action" style="justify-content: start">
  
- <div class="ecom-collection__action ecom-product__wishlist ecom-collection__action-hor-start ecom-collection__action-ver-start">
+ <div class="ecom-collection__product-group-button-action ecom-collection__product-group-button-action-wrapper" style="justify-content: start">
+ 
+ <div class="ecom-collection__action ecom-product__wishlist ecom-collection__action-hor-start ecom-collection__action-ver-start ">
  <a type="button" class="ecom-product__wishlist-link ecom-product__wishlist-visibility-" data-product-handle="{{product.handle}}" data-product-id="{{product.id}}">
  
  
@@ -432,12 +430,12 @@
  </div>
  
  
- <div class="ecom-collection__action ecom-product__compare ecom-collection__action-hor-start ecom-collection__action-ver-start">
+ <div class="ecom-collection__action ecom-product__compare ecom-collection__action-hor-start ecom-collection__action-ver-start ">
  <a type="button" class="ecom-product__compare-link ecom-product__wishlist-visibility-" data-product-handle="{{product.handle}}">
  
  
  <span class="ecom-product__compare-icon">
- <span class="ecom-product__compare-normal ecom-product__compare-icon-normal"></span>
+ <span class="ecom-product__compare-normal ecom-product__compare-icon-normal"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg></span>
  <span class="ecom-product__compare-added ecom-product__compare-icon-added"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><path d="M 16 3 C 8.800781 3 3 8.800781 3 16 C 3 23.199219 8.800781 29 16 29 C 23.199219 29 29 23.199219 29 16 C 29 14.601563 28.8125 13.207031 28.3125 11.90625 L 26.6875 13.5 C 26.886719 14.300781 27 15.101563 27 16 C 27 22.101563 22.101563 27 16 27 C 9.898438 27 5 22.101563 5 16 C 5 9.898438 9.898438 5 16 5 C 19 5 21.695313 6.195313 23.59375 8.09375 L 25 6.6875 C 22.699219 4.386719 19.5 3 16 3 Z M 27.28125 7.28125 L 16 18.5625 L 11.71875 14.28125 L 10.28125 15.71875 L 15.28125 20.71875 L 16 21.40625 L 16.71875 20.71875 L 28.71875 8.71875 Z"></path></svg></span>
  </span>
  <span class="ecom-product__compare-tooltip ecom-product__compare-normal">Compare</span>
@@ -868,7 +866,6 @@
  <span class="ecom-collection__product-badge--sale" aria-hidden="true" style="{%- unless product.compare_at_price > product.price and product.available -%}display: none;{%- endunless -%}">
  {{ 'sections.ecom-home-home.sale_text_hd6hog77se9_html' | t }}
  </span>
- 
  {% if badge_tags %}
  {% for badge in badge_tags %}
  {% for original_tag in product.tags %}
@@ -896,19 +893,18 @@
  {%else%}
  {%- assign sale = null %}
  {%- endif -%}
- 
  <span class="ecom-collection__product-price--bage-sale" style="{% unless sale %}display:none{% endunless %}">
  {{ 'sections.ecom-home-home.sale_badge_hd6hog77se9_html' | t: sale:sale }}
  </span>
- 
  {%- endif -%}
  </div>
  </a>
  
  
+ <div class="ecom-collection__product-group-button-action " style="justify-content: start">
  
  
- 
+ </div>
  </div>
  <div class="ecom-collection__product-item--information">
  <div class="ecom-collection__product-item--information-wrapper ecom-flex ecom-column">
