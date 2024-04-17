@@ -490,7 +490,9 @@
       "text_hour_1asrtrdd50l_html": "[%-H] hour%!H",
       "text_minute_1asrtrdd50l_html": "[%-M] minute%!M",
       "text_second_1asrtrdd50l_html": "[%-S] second%!S",
-      "saleOff_1asrtrdd50l_html": "{{sale}}% Off"
+      "saleOff_1asrtrdd50l_html": "{{sale}}% Off",
+      "view_more_text_tx8aio1g06_html": "View more",
+      "view_less_text_tx8aio1g06_html": "View less"
     },
     "ecom-preview-home-home": {
       "headingtext_25vsn6i2n3n_html": "EComposer Mask",
