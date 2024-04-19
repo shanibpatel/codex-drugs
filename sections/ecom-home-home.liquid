@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-04-19 10:45:21
+ At 2024-04-19 10:46:35
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -638,10 +638,10 @@
  {% assign limit = limit | plus: 0 %}
  {%- endif-%}
  
- {%- capture value -%}undefined{% endcapture%}
+ {%- capture value -%}CODEX{% endcapture%}
  {%- assign c = collections.all -%}
  {%- paginate c.products by 500 -%}
- {% assign products = collections.all.products | where: 'type', value | sort: "created_at" | limit: limit %}
+ {% assign products = collections.all.products | where: 'vendor', value | sort: "created_at" | limit: limit %}
  {%- endpaginate -%}
  {% if products.size < 1 and EComBuilderMode %}
  {% assign products = collections.all.products | limit:12 %}
@@ -1041,17 +1041,6 @@
  "name": "home",
  "locales": {
  "en": {
- "product_option_swatch_hd6hog77se9_html": "Color",
- "view_more_text_hd6hog77se9_html": "View more",
- "sold_out_text_hd6hog77se9_html": "Sold out",
- "added_cart_text_hd6hog77se9_html": "Added to cart",
- "added_cart_message_hd6hog77se9_html": "Added to cart",
- "pre_order_hd6hog77se9_html": "Pre order",
- "add_to_cart_hd6hog77se9_html": "Add to cart ",
- "sold_text_hd6hog77se9_html": "Sold",
- "sale_text_hd6hog77se9_html": "Sale",
- "sale_badge_hd6hog77se9_html": "-{{sale}}%",
- "countdown_title_hd6hog77se9_html": "Hurry up! The sale will end on",
  "product_option_swatch_n2pggic14ge_html": "Color",
  "add_to_cart_n2pggic14ge_html": "Add to cart ",
  "product_unavailable_n2pggic14ge_html": "Unavailable",
@@ -1065,6 +1054,17 @@
  "sale_badge_n2pggic14ge_html": "-33%",
  "countdown_title_n2pggic14ge_html": " ",
  "no_product_item_n2pggic14ge_html": "There are no product yet!",
+ "product_option_swatch_hd6hog77se9_html": "Color",
+ "view_more_text_hd6hog77se9_html": "View more",
+ "sold_out_text_hd6hog77se9_html": "Sold out",
+ "added_cart_text_hd6hog77se9_html": "Added to cart",
+ "added_cart_message_hd6hog77se9_html": "Added to cart",
+ "pre_order_hd6hog77se9_html": "Pre order",
+ "add_to_cart_hd6hog77se9_html": "Add to cart ",
+ "sold_text_hd6hog77se9_html": "Sold",
+ "sale_text_hd6hog77se9_html": "Sale",
+ "sale_badge_hd6hog77se9_html": "-{{sale}}%",
+ "countdown_title_hd6hog77se9_html": "Hurry up! The sale will end on",
  "headingtext_tt2knq13uyd_html": "Our Product Range\n<br>",
  "text_week_n2pggic14ge_html": "[%-W] week%!W",
  "text_day_n2pggic14ge_html": "[%-d] day%!D",
