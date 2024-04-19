@@ -2,7 +2,7 @@
  EComposer (https://ecomposer.io)
  You SHOULD NOT modify source code in this page because
  It is automatically generated from EComposer
- At 2024-04-19 09:06:51
+ At 2024-04-19 10:51:39
  {% endcomment %} 
  
  {% assign ecom_root_url = routes.root_url %}
@@ -302,6 +302,14 @@
  {{target.price | money_with_currency}}
  {%- else -%}
  {{target.price| money }}
+ {%- endif -%}
+ </div>
+ 
+ <div class="ecom-product-single__price--regular" {%- if target.compare_at_price == nil or target.compare_at_price < target.price -%} style="display:none" {% endif %}>
+ {%- if settings.currency_code_enabled -%}
+ {{target.compare_at_price | money_with_currency}}
+ {%- else -%}
+ {{target.compare_at_price | money }}
  {%- endif -%}
  </div>
  
@@ -898,6 +906,13 @@
  "en": {
  "product_single_sale_text_1wt5zw3s1ej_html": "Sale 10 to 20%",
  "product_single_sold_text_1wt5zw3s1ej_html": "Sold out",
+ "view_more_text_1asrtrdd50l_html": "View more",
+ "sold_text_1asrtrdd50l_html": "Sold",
+ "sale_text_1asrtrdd50l_html": "Sale",
+ "sale_badge_1asrtrdd50l_html": "{{sale}}% Off",
+ "no_product_item_1asrtrdd50l_html": "There are no product yet!",
+ "view_more_text_tx8aio1g06_html": "View more",
+ "view_less_text_tx8aio1g06_html": "View less",
  "delivery_text_7sddtsencig_html": "Estimated delivery between [date_start] - [date_end]",
  "hour_7sddtsencig_html": "hour",
  "delivery_minute_7sddtsencig_html": "minute(s)",
@@ -960,19 +975,12 @@
  "textcontent_zfi69yeaxt_html": "\u201cI think the biggest indicator of how good a company is, is whether or not you'd feel comfortable giving the product to your own family, and I can tell you unequivocally that I feel very confident giving these products to the people I love.\u201d",
  "headingtext_x8zzjpanhh_html": "What Our Customers Are Saying",
  "headingtext_nm66rk5xmgb_html": "Our Featured Products",
- "view_more_text_1asrtrdd50l_html": "View more",
- "sold_text_1asrtrdd50l_html": "Sold",
- "sale_text_1asrtrdd50l_html": "Sale",
- "sale_badge_1asrtrdd50l_html": "{{sale}}% Off",
- "no_product_item_1asrtrdd50l_html": "There are no product yet!",
  "text_week_1asrtrdd50l_html": "[%-W] week%!W",
  "text_day_1asrtrdd50l_html": "[%-d] day%!D",
  "text_hour_1asrtrdd50l_html": "[%-H] hour%!H",
  "text_minute_1asrtrdd50l_html": "[%-M] minute%!M",
  "text_second_1asrtrdd50l_html": "[%-S] second%!S",
- "saleOff_1asrtrdd50l_html": "{{sale}}% Off",
- "view_more_text_tx8aio1g06_html": "View more",
- "view_less_text_tx8aio1g06_html": "View less"
+ "saleOff_1asrtrdd50l_html": "{{sale}}% Off"
  }
  },
  "settings": [
