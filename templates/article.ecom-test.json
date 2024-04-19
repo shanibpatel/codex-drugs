@@ -1,0 +1,13 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-test-post": {
+      "type": "ecom-test-post",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "ecom-test-post"
+  ]
+}
