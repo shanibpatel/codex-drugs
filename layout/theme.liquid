@@ -350,5 +350,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  {%- render "ecom_footer"-%}</body>
+  {%- render "ecom_footer"-%}{%- sections 'smi-group' -%}
+</body>
 </html>

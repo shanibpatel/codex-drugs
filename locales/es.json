@@ -7,7 +7,7 @@
       "login_form_password_placeholder": "Tu contraseña",
       "login_form_error": "Contraseña incorrecta",
       "login_form_submit": "Ingresar",
-      "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"/admin\" class=\"link underlined-link\">Inicia sesión aquí</a>",
+      "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"\/admin\" class=\"link underlined-link\">Inicia sesión aquí<\/a>",
       "powered_by_shopify_html": "Esta tienda contará con tecnología Shopify {{ shopify }}"
     },
     "social": {
@@ -118,7 +118,7 @@
         "minimum_of": "Mínimo de {{ quantity }}",
         "maximum_of": "Máximo de {{ quantity }}",
         "multiples_of": "Incrementos de {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> en el carrito",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> en el carrito",
         "note": "Ver reglas de cantidad"
       },
       "price": {
@@ -138,8 +138,8 @@
         "view_store_info": "Ver información de la tienda",
         "check_other_stores": "Verificar disponibilidad en otras tiendas",
         "pick_up_available": "Retiro disponible",
-        "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_available_at_html": "Retiro disponible en <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "unavailable": "No se pudo cargar la disponibilidad de retiro",
         "refresh": "Actualizar"
       },
@@ -155,7 +155,7 @@
       },
       "view_full_details": "Ver todos los detalles",
       "include_taxes": "Impuesto incluido.",
-      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago.",
+      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pago.",
       "choose_options": "Seleccionar opciones",
       "choose_product_options": "Elegir opciones para {{ product_name }}",
       "value_unavailable": "{{ option_value }}: no disponible",
@@ -215,6 +215,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Página no encontrada",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "No se encontraron resultados para “{{ terms }}” Revisa la ortografía o usa una palabra o frase diferente.",
       "results_with_count": {
@@ -263,10 +267,6 @@
         "error_heading": "Por favor, ajusta lo siguiente:",
         "title": "Formulario de contacto"
       }
-    },
-    "404": {
-      "title": "Página no encontrada",
-      "subtext": "404"
     }
   },
   "sections": {
@@ -288,9 +288,9 @@
       "empty": "Tu carrito esta vacío",
       "cart_error": "Hubo un error al actualizar tu carrito de compra. Inténtalo de nuevo.",
       "cart_quantity_error_html": "Solo puedes agregar {{ quantity }} de este artículo a tu carrito.",
-      "taxes_and_shipping_policy_at_checkout_html": "Impuestos, descuentos y <a href=\"{{ link }}\">envío</a> calculados en la pantalla de pago",
+      "taxes_and_shipping_policy_at_checkout_html": "Impuestos, descuentos y <a href=\"{{ link }}\">envío<\/a> calculados en la pantalla de pago",
       "taxes_included_but_shipping_at_checkout": "Impuesto incluido, envío y descuentos calculados en la pantalla de pago",
-      "taxes_included_and_shipping_policy_html": "Impuesto incluido. <a href=\"{{ link }}\">Envío</a> y descuentos calculados en la pantalla de pago.",
+      "taxes_included_and_shipping_policy_html": "Impuesto incluido. <a href=\"{{ link }}\">Envío<\/a> y descuentos calculados en la pantalla de pago.",
       "taxes_and_shipping_at_checkout": "Impuestos, descuentos y envío calculados en la pantalla de pago",
       "headings": {
         "product": "Producto",
@@ -302,7 +302,7 @@
       "update": "Actualizar",
       "login": {
         "title": "¿Tienes una cuenta?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Inicia sesión</a> para finalizar tus compras con mayor rapidez."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Inicia sesión<\/a> para finalizar tus compras con mayor rapidez."
       },
       "estimated_total": "Total estimado",
       "new_estimated_total": "Nuevo total estimado"
@@ -325,7 +325,7 @@
     "collection_template": {
       "title": "Colección",
       "empty": "No se encontró ningún producto",
-      "use_fewer_filters_html": "Usa menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">elimínalos todos</a>"
+      "use_fewer_filters_html": "Usa menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">elimínalos todos<\/a>"
     },
     "video": {
       "load_video": "Cargar video: {{ description }}"
@@ -352,7 +352,7 @@
     "quick_order_list": {
       "product_total": "Subtotal de productos",
       "view_cart": "Ver carrito",
-      "each": "{{ money }}/unidad",
+      "each": "{{ money }}\/unidad",
       "product": "Producto",
       "variant": "Variante",
       "variant_total": "Total de variantes",
@@ -375,10 +375,10 @@
     }
   },
   "localization": {
-    "country_label": "País/región",
+    "country_label": "País\/región",
     "language_label": "Idioma",
     "update_language": "Actualizar idioma",
-    "update_country": "Actualizar país/región",
+    "update_country": "Actualizar país\/región",
     "search": "Buscar",
     "popular_countries_regions": "Países o regiones populares",
     "country_results_count": "{{ count }} países o regiones encontrados"
@@ -410,7 +410,7 @@
       "address1": "Dirección 1",
       "address2": "Dirección 2",
       "city": "Ciudad",
-      "country": "País/región",
+      "country": "País\/región",
       "province": "Provincia",
       "zip": "Código postal",
       "phone": "Teléfono",
@@ -420,7 +420,7 @@
       "cancel": "Cancelar",
       "edit": "Editar",
       "delete": "Eliminar",
-      "delete_confirm": "¿Está seguro/a de que deseas eliminar esta dirección?"
+      "delete_confirm": "¿Está seguro\/a de que deseas eliminar esta dirección?"
     },
     "log_in": "Iniciar sesión",
     "log_out": "Cerrar sesión",
@@ -523,6 +523,90 @@
       "send_on_label": "Enviar el (opcional)",
       "expanded": "Formulario del destinatario de la tarjeta de regalo expandido",
       "collapsed": "Formulario del destinatario de tarjeta de regalo contraído"
+    }
+  },
+  "smind": {
+    "general": {
+      "view_all": "View all",
+      "load_more": "Load more",
+      "verified_buyer": "Verified buyer",
+      "show_more": "Show more",
+      "search": "Search",
+      "recent_searches": "Recent searches",
+      "popular_searches": "Popular searches",
+      "popular_items": "Popular items",
+      "suggestions": "Suggestions",
+      "products": "Products",
+      "pages": "Pages",
+      "search_for": "Search for “{{ terms }}”",
+      "cart_is_empty": "Your cart is empty",
+      "continue_shopping": "Continue shopping",
+      "cart": "Cart",
+      "estimated_total": "Estimated total",
+      "checkout": "Check out",
+      "view_cart": "View cart",
+      "view_product": "View product",
+      "sort_by": "Sort by:",
+      "product_count": {
+        "one": "{{ product_count }} product found",
+        "other": "{{ product_count }} products found"
+      }
+    },
+    "form": {
+      "text_button_subscribe": "Subscribe",
+      "text_button_send_message": "Send message",
+      "label_name": "Name",
+      "label_message": "Message",
+      "placeholder_email": "Enter your email",
+      "field_required": "{{ field }} is required",
+      "field_invalid": "{{ field }} is invalid",
+      "form_error": "An error occurred, please check the information and resubmit.",
+      "form_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+      "label_email": "Email"
+    },
+    "product": {
+      "add_to_cart": "Add to cart",
+      "buy_now": "Buy it now",
+      "quantity": "Quantity",
+      "product_type": "Product type",
+      "vendor": "Vendor",
+      "collections": "Collections",
+      "tags": "Tags",
+      "send_as_gift": "I want to send this as a gift",
+      "max_textarea": "200 characters max",
+      "send_on": "Send on(optional)",
+      "in_cart": "in cart",
+      "item_in_cart": "{{ cart_qty }} in cart",
+      "all": "All",
+      "one_item_al_added_cart": "item is already added to cart!",
+      "many_items_al_added_cart": "items are already added to cart!",
+      "one_item_in_cart": "item is in cart!",
+      "many_items_in_cart": "items are in cart!",
+      "cant_add_more": "You can't add more",
+      "to_the_cart": "to the cart",
+      "cart_added": "Cart added",
+      "cart_failed": "Add cart failed",
+      "sold_out": "Sold out",
+      "sale": "Sale {{ sale_percent }}",
+      "no_products": "No products",
+      "from_price_html": "From {{ price }}",
+      "unit_price": "Unit price",
+      "unit_price_separator": "per",
+      "select_options": "Select options",
+      "total_price_product_bundle": "Total price",
+      "add_item_to_cart_product_bundle_html": "Add (<span class='item-bunble-selected'><\/span>) items to cart",
+      "add_all_item_to_cart_product_bundle_html": "Add all items to cart",
+      "this_item": "This item"
+    },
+    "cart": {
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes, discounts and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
+      "taxes_included_but_shipping_at_checkout": "Tax included and shipping and discounts calculated at checkout",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">shipping<\/a> and discounts calculated at checkout.",
+      "taxes_and_shipping_at_checkout": "Taxes, discounts and shipping calculated at checkout",
+      "save": "Save",
+      "cancel": "Cancel",
+      "note_empty": "Note field is required",
+      "note_error": "An error occurred, please check the information and resubmit"
     }
   }
 }
