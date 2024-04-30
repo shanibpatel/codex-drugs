@@ -1,5 +1,7 @@
 <!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}">
+{% assign locale_rtl = "ar,fa,he,ks,ps,sd,ur," %}
+{% assign current_locale = localization.language.iso_code | append: ',' %}
+<html {% if locale_rtl contains current_locale %}dir="rtl"{% endif %}  class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
 <!--VEDA_ROCKET_LOADER--><script src="{{ 'veda-rocket-loader.js' | asset_url }}" defer></script><!--END_VEDA_ROCKET_LOADER-->
 
@@ -284,6 +286,8 @@
       }
     </script>
   {% render 'gp-head' %}
+<!--VEDA_HEADER_SCRIPTS_POSITION-->
+{%- render 'veda-header-scripts' -%}
 </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}"><div id="veda-root" style="opacity: 0; overflow: clip; display: flow-root;">
@@ -360,5 +364,10 @@
 
 <!--VEDA_FOOTER_THEME_POSITION-->
 {%sections 'veda-theme-footer' %}
+<!--VEDA_FOOTER_SCRIPTS_POSITION-->
+{%- render 'veda-footer-scripts' -%}
+
+<!--VEDA_NO_PLACEMENT_ADDON_POSITION_V2-->
+{% render 'veda-no-placement-addons' %}
 <!--BEFORE_CLOSE_VEDA_ROOT--></div></body>
 </html>
