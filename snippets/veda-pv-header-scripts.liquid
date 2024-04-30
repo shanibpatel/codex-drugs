@@ -1,0 +1,2188 @@
+{% comment %}
+You SHOULD NOT modify source code in this page because
+It is automatically generated from Veda.
+{% endcomment %}
+<style>:root {
+      
+          --color-primary: #33C9C4;
+          --color-primary-freeze: #33C9C4;
+          --rgb-color-primary: 51, 201, 196;
+          --rgb-color-primary-freeze: 51, 201, 196;
+        
+
+          --color-secondary: #3540df;
+          --color-secondary-freeze: #3540df;
+          --rgb-color-secondary: 53, 64, 223;
+          --rgb-color-secondary-freeze: 53, 64, 223;
+        
+
+          --color-tertiary: #eb6c6c;
+          --color-tertiary-freeze: #eb6c6c;
+          --rgb-color-tertiary: 235, 108, 108;
+          --rgb-color-tertiary-freeze: 235, 108, 108;
+        
+
+          --color-quaternary: #FBC473;
+          --color-quaternary-freeze: #FBC473;
+          --rgb-color-quaternary: 251, 196, 115;
+          --rgb-color-quaternary-freeze: 251, 196, 115;
+        
+
+          --color-dark: #000000;
+          --color-dark-freeze: #000000;
+          --rgb-color-dark: 0, 0, 0;
+          --rgb-color-dark-freeze: 0, 0, 0;
+        
+
+          --color-gray9: #232323;
+          --color-gray9-freeze: #232323;
+          --rgb-color-gray9: 35, 35, 35;
+          --rgb-color-gray9-freeze: 35, 35, 35;
+        
+
+          --color-gray8: #3e3e3e;
+          --color-gray8-freeze: #3e3e3e;
+          --rgb-color-gray8: 62, 62, 62;
+          --rgb-color-gray8-freeze: 62, 62, 62;
+        
+
+          --color-gray7: #575757;
+          --color-gray7-freeze: #575757;
+          --rgb-color-gray7: 87, 87, 87;
+          --rgb-color-gray7-freeze: 87, 87, 87;
+        
+
+          --color-gray6: #888888;
+          --color-gray6-freeze: #888888;
+          --rgb-color-gray6: 136, 136, 136;
+          --rgb-color-gray6-freeze: 136, 136, 136;
+        
+
+          --color-gray5: #b3b3b3;
+          --color-gray5-freeze: #b3b3b3;
+          --rgb-color-gray5: 179, 179, 179;
+          --rgb-color-gray5-freeze: 179, 179, 179;
+        
+
+          --color-gray4: #dbdbdb;
+          --color-gray4-freeze: #dbdbdb;
+          --rgb-color-gray4: 219, 219, 219;
+          --rgb-color-gray4-freeze: 219, 219, 219;
+        
+
+          --color-gray3: #e9e9e9;
+          --color-gray3-freeze: #e9e9e9;
+          --rgb-color-gray3: 233, 233, 233;
+          --rgb-color-gray3-freeze: 233, 233, 233;
+        
+
+          --color-gray2: #f3f3f3;
+          --color-gray2-freeze: #f3f3f3;
+          --rgb-color-gray2: 243, 243, 243;
+          --rgb-color-gray2-freeze: 243, 243, 243;
+        
+
+          --color-gray1: #fafafa;
+          --color-gray1-freeze: #fafafa;
+          --rgb-color-gray1: 250, 250, 250;
+          --rgb-color-gray1-freeze: 250, 250, 250;
+        
+
+          --color-light: #ffffff;
+          --color-light-freeze: #ffffff;
+          --rgb-color-light: 255, 255, 255;
+          --rgb-color-light-freeze: 255, 255, 255;
+        
+      
+--font-primary:Helvetica;
+--font-secondary:Helvetica;
+--font-tertiary:Playfair Display;
+--font-quaternary:Roboto Mono;
+    }
+    :root.dark {
+      
+        --color-primary: #33C9C4;
+        --rgb-color-primary: 51, 201, 196;
+      
+
+        --color-secondary: #3540df;
+        --rgb-color-secondary: 53, 64, 223;
+      
+
+        --color-tertiary: #eb6c6c;
+        --rgb-color-tertiary: 235, 108, 108;
+      
+
+        --color-quaternary: #FBC473;
+        --rgb-color-quaternary: 251, 196, 115;
+      
+
+        --color-dark: #ffffff;
+        --rgb-color-dark: 255, 255, 255;
+      
+
+        --color-gray9: #fafafa;
+        --rgb-color-gray9: 250, 250, 250;
+      
+
+        --color-gray8: #f3f3f3;
+        --rgb-color-gray8: 243, 243, 243;
+      
+
+        --color-gray7: #e9e9e9;
+        --rgb-color-gray7: 233, 233, 233;
+      
+
+        --color-gray6: #dbdbdb;
+        --rgb-color-gray6: 219, 219, 219;
+      
+
+        --color-gray5: #b3b3b3;
+        --rgb-color-gray5: 179, 179, 179;
+      
+
+        --color-gray4: #888888;
+        --rgb-color-gray4: 136, 136, 136;
+      
+
+        --color-gray3: #575757;
+        --rgb-color-gray3: 87, 87, 87;
+      
+
+        --color-gray2: #3e3e3e;
+        --rgb-color-gray2: 62, 62, 62;
+      
+
+        --color-gray1: #232323;
+        --rgb-color-gray1: 35, 35, 35;
+      
+
+        --color-light: #000000;
+        --rgb-color-light: 0, 0, 0;
+      
+    }
+    
+
+  html .container {
+    --container-width: 1300px;
+    --container-gap: 20px;
+    max-width: 1300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  html .row {
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  html .row > * {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  html .veda-grid-auto {
+    column-gap: 10px !important;
+    row-gap: 20px !important;
+  }
+
+
+        .veda-color-default {
+          
+            --color-primary: #33C9C4;
+            --color-primary-freeze: #33C9C4;
+            --rgb-color-primary: 51, 201, 196;
+            --rgb-color-primary-freeze: 51, 201, 196;
+          
+
+            --color-secondary: #3540df;
+            --color-secondary-freeze: #3540df;
+            --rgb-color-secondary: 53, 64, 223;
+            --rgb-color-secondary-freeze: 53, 64, 223;
+          
+
+            --color-tertiary: #eb6c6c;
+            --color-tertiary-freeze: #eb6c6c;
+            --rgb-color-tertiary: 235, 108, 108;
+            --rgb-color-tertiary-freeze: 235, 108, 108;
+          
+
+            --color-quaternary: #FBC473;
+            --color-quaternary-freeze: #FBC473;
+            --rgb-color-quaternary: 251, 196, 115;
+            --rgb-color-quaternary-freeze: 251, 196, 115;
+          
+
+            --color-dark: #000000;
+            --color-dark-freeze: #000000;
+            --rgb-color-dark: 0, 0, 0;
+            --rgb-color-dark-freeze: 0, 0, 0;
+          
+
+            --color-gray9: #232323;
+            --color-gray9-freeze: #232323;
+            --rgb-color-gray9: 35, 35, 35;
+            --rgb-color-gray9-freeze: 35, 35, 35;
+          
+
+            --color-gray8: #3e3e3e;
+            --color-gray8-freeze: #3e3e3e;
+            --rgb-color-gray8: 62, 62, 62;
+            --rgb-color-gray8-freeze: 62, 62, 62;
+          
+
+            --color-gray7: #575757;
+            --color-gray7-freeze: #575757;
+            --rgb-color-gray7: 87, 87, 87;
+            --rgb-color-gray7-freeze: 87, 87, 87;
+          
+
+            --color-gray6: #888888;
+            --color-gray6-freeze: #888888;
+            --rgb-color-gray6: 136, 136, 136;
+            --rgb-color-gray6-freeze: 136, 136, 136;
+          
+
+            --color-gray5: #b3b3b3;
+            --color-gray5-freeze: #b3b3b3;
+            --rgb-color-gray5: 179, 179, 179;
+            --rgb-color-gray5-freeze: 179, 179, 179;
+          
+
+            --color-gray4: #dbdbdb;
+            --color-gray4-freeze: #dbdbdb;
+            --rgb-color-gray4: 219, 219, 219;
+            --rgb-color-gray4-freeze: 219, 219, 219;
+          
+
+            --color-gray3: #e9e9e9;
+            --color-gray3-freeze: #e9e9e9;
+            --rgb-color-gray3: 233, 233, 233;
+            --rgb-color-gray3-freeze: 233, 233, 233;
+          
+
+            --color-gray2: #f3f3f3;
+            --color-gray2-freeze: #f3f3f3;
+            --rgb-color-gray2: 243, 243, 243;
+            --rgb-color-gray2-freeze: 243, 243, 243;
+          
+
+            --color-gray1: #fafafa;
+            --color-gray1-freeze: #fafafa;
+            --rgb-color-gray1: 250, 250, 250;
+            --rgb-color-gray1-freeze: 250, 250, 250;
+          
+
+            --color-light: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-light: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+        }
+        .veda-color-default.dark {
+          
+          --color-primary: #33C9C4;
+          --rgb-color-primary: 51, 201, 196;
+          
+        
+
+          --color-secondary: #3540df;
+          --rgb-color-secondary: 53, 64, 223;
+          
+        
+
+          --color-tertiary: #eb6c6c;
+          --rgb-color-tertiary: 235, 108, 108;
+          
+        
+
+          --color-quaternary: #FBC473;
+          --rgb-color-quaternary: 251, 196, 115;
+          
+        
+
+          --color-dark: #ffffff;
+          --rgb-color-dark: 255, 255, 255;
+          
+        
+
+          --color-gray9: #fafafa;
+          --rgb-color-gray9: 250, 250, 250;
+          
+        
+
+          --color-gray8: #f3f3f3;
+          --rgb-color-gray8: 243, 243, 243;
+          
+        
+
+          --color-gray7: #e9e9e9;
+          --rgb-color-gray7: 233, 233, 233;
+          
+        
+
+          --color-gray6: #dbdbdb;
+          --rgb-color-gray6: 219, 219, 219;
+          
+        
+
+          --color-gray5: #b3b3b3;
+          --rgb-color-gray5: 179, 179, 179;
+          
+        
+
+          --color-gray4: #888888;
+          --rgb-color-gray4: 136, 136, 136;
+          
+        
+
+          --color-gray3: #575757;
+          --rgb-color-gray3: 87, 87, 87;
+          
+        
+
+          --color-gray2: #3e3e3e;
+          --rgb-color-gray2: 62, 62, 62;
+          
+        
+
+          --color-gray1: #232323;
+          --rgb-color-gray1: 35, 35, 35;
+          
+        
+
+          --color-light: #000000;
+          --rgb-color-light: 0, 0, 0;
+          
+        
+        }
+      
+
+        .veda-color-dark-default {
+          
+            --color-primary: #33C9C4;
+            --color-primary-freeze: #33C9C4;
+            --rgb-color-primary: 51, 201, 196;
+            --rgb-color-primary-freeze: 51, 201, 196;
+          
+
+            --color-secondary: #3540df;
+            --color-secondary-freeze: #3540df;
+            --rgb-color-secondary: 53, 64, 223;
+            --rgb-color-secondary-freeze: 53, 64, 223;
+          
+
+            --color-tertiary: #eb6c6c;
+            --color-tertiary-freeze: #eb6c6c;
+            --rgb-color-tertiary: 235, 108, 108;
+            --rgb-color-tertiary-freeze: 235, 108, 108;
+          
+
+            --color-quaternary: #FBC473;
+            --color-quaternary-freeze: #FBC473;
+            --rgb-color-quaternary: 251, 196, 115;
+            --rgb-color-quaternary-freeze: 251, 196, 115;
+          
+
+            --color-dark: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-dark: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+
+            --color-gray9: #fafafa;
+            --color-gray1-freeze: #fafafa;
+            --rgb-color-gray9: 250, 250, 250;
+            --rgb-color-gray1-freeze: 250, 250, 250;
+          
+
+            --color-gray8: #f3f3f3;
+            --color-gray2-freeze: #f3f3f3;
+            --rgb-color-gray8: 243, 243, 243;
+            --rgb-color-gray2-freeze: 243, 243, 243;
+          
+
+            --color-gray7: #e9e9e9;
+            --color-gray3-freeze: #e9e9e9;
+            --rgb-color-gray7: 233, 233, 233;
+            --rgb-color-gray3-freeze: 233, 233, 233;
+          
+
+            --color-gray6: #dbdbdb;
+            --color-gray4-freeze: #dbdbdb;
+            --rgb-color-gray6: 219, 219, 219;
+            --rgb-color-gray4-freeze: 219, 219, 219;
+          
+
+            --color-gray5: #b3b3b3;
+            --color-gray5-freeze: #b3b3b3;
+            --rgb-color-gray5: 179, 179, 179;
+            --rgb-color-gray5-freeze: 179, 179, 179;
+          
+
+            --color-gray4: #888888;
+            --color-gray6-freeze: #888888;
+            --rgb-color-gray4: 136, 136, 136;
+            --rgb-color-gray6-freeze: 136, 136, 136;
+          
+
+            --color-gray3: #575757;
+            --color-gray7-freeze: #575757;
+            --rgb-color-gray3: 87, 87, 87;
+            --rgb-color-gray7-freeze: 87, 87, 87;
+          
+
+            --color-gray2: #3e3e3e;
+            --color-gray8-freeze: #3e3e3e;
+            --rgb-color-gray2: 62, 62, 62;
+            --rgb-color-gray8-freeze: 62, 62, 62;
+          
+
+            --color-gray1: #232323;
+            --color-gray9-freeze: #232323;
+            --rgb-color-gray1: 35, 35, 35;
+            --rgb-color-gray9-freeze: 35, 35, 35;
+          
+
+            --color-light: #000000;
+            --color-dark-freeze: #000000;
+            --rgb-color-light: 0, 0, 0;
+            --rgb-color-dark-freeze: 0, 0, 0;
+          
+        }
+        .veda-color-dark-default.dark {
+          
+          --color-primary: #33C9C4;
+          --rgb-color-primary: 51, 201, 196;
+          --color-primary-freeze: #33C9C4;
+--rgb-color-primary-freeze: 51, 201, 196;
+        
+
+          --color-secondary: #3540df;
+          --rgb-color-secondary: 53, 64, 223;
+          --color-secondary-freeze: #3540df;
+--rgb-color-secondary-freeze: 53, 64, 223;
+        
+
+          --color-tertiary: #eb6c6c;
+          --rgb-color-tertiary: 235, 108, 108;
+          --color-tertiary-freeze: #eb6c6c;
+--rgb-color-tertiary-freeze: 235, 108, 108;
+        
+
+          --color-quaternary: #FBC473;
+          --rgb-color-quaternary: 251, 196, 115;
+          --color-quaternary-freeze: #FBC473;
+--rgb-color-quaternary-freeze: 251, 196, 115;
+        
+
+          --color-dark: #000000;
+          --rgb-color-dark: 0, 0, 0;
+          --color-light-freeze: #000000;
+--rgb-color-light-freeze: 0, 0, 0;
+        
+
+          --color-gray9: #232323;
+          --rgb-color-gray9: 35, 35, 35;
+          --color-gray1-freeze: #232323;
+--rgb-color-gray1-freeze: 35, 35, 35;
+        
+
+          --color-gray8: #3e3e3e;
+          --rgb-color-gray8: 62, 62, 62;
+          --color-gray2-freeze: #3e3e3e;
+--rgb-color-gray2-freeze: 62, 62, 62;
+        
+
+          --color-gray7: #575757;
+          --rgb-color-gray7: 87, 87, 87;
+          --color-gray3-freeze: #575757;
+--rgb-color-gray3-freeze: 87, 87, 87;
+        
+
+          --color-gray6: #888888;
+          --rgb-color-gray6: 136, 136, 136;
+          --color-gray4-freeze: #888888;
+--rgb-color-gray4-freeze: 136, 136, 136;
+        
+
+          --color-gray5: #b3b3b3;
+          --rgb-color-gray5: 179, 179, 179;
+          --color-gray5-freeze: #b3b3b3;
+--rgb-color-gray5-freeze: 179, 179, 179;
+        
+
+          --color-gray4: #dbdbdb;
+          --rgb-color-gray4: 219, 219, 219;
+          --color-gray6-freeze: #dbdbdb;
+--rgb-color-gray6-freeze: 219, 219, 219;
+        
+
+          --color-gray3: #e9e9e9;
+          --rgb-color-gray3: 233, 233, 233;
+          --color-gray7-freeze: #e9e9e9;
+--rgb-color-gray7-freeze: 233, 233, 233;
+        
+
+          --color-gray2: #f3f3f3;
+          --rgb-color-gray2: 243, 243, 243;
+          --color-gray8-freeze: #f3f3f3;
+--rgb-color-gray8-freeze: 243, 243, 243;
+        
+
+          --color-gray1: #fafafa;
+          --rgb-color-gray1: 250, 250, 250;
+          --color-gray9-freeze: #fafafa;
+--rgb-color-gray9-freeze: 250, 250, 250;
+        
+
+          --color-light: #ffffff;
+          --rgb-color-light: 255, 255, 255;
+          --color-dark-freeze: #ffffff;
+--rgb-color-dark-freeze: 255, 255, 255;
+        
+        }
+      
+
+        .veda-color-stile {
+          
+            --color-primary: #bfff00;
+            --color-primary-freeze: #bfff00;
+            --rgb-color-primary: 191, 255, 0;
+            --rgb-color-primary-freeze: 191, 255, 0;
+          
+
+            --color-secondary: #ffe70a;
+            --color-secondary-freeze: #ffe70a;
+            --rgb-color-secondary: 255, 231, 10;
+            --rgb-color-secondary-freeze: 255, 231, 10;
+          
+
+            --color-tertiary: #ff6a6a;
+            --color-tertiary-freeze: #ff6a6a;
+            --rgb-color-tertiary: 255, 106, 106;
+            --rgb-color-tertiary-freeze: 255, 106, 106;
+          
+
+            --color-quaternary: #73fba3;
+            --color-quaternary-freeze: #73fba3;
+            --rgb-color-quaternary: 115, 251, 163;
+            --rgb-color-quaternary-freeze: 115, 251, 163;
+          
+
+            --color-dark: #000000;
+            --color-dark-freeze: #000000;
+            --rgb-color-dark: 0, 0, 0;
+            --rgb-color-dark-freeze: 0, 0, 0;
+          
+
+            --color-gray9: #232323;
+            --color-gray9-freeze: #232323;
+            --rgb-color-gray9: 35, 35, 35;
+            --rgb-color-gray9-freeze: 35, 35, 35;
+          
+
+            --color-gray8: #3e3e3e;
+            --color-gray8-freeze: #3e3e3e;
+            --rgb-color-gray8: 62, 62, 62;
+            --rgb-color-gray8-freeze: 62, 62, 62;
+          
+
+            --color-gray7: #575757;
+            --color-gray7-freeze: #575757;
+            --rgb-color-gray7: 87, 87, 87;
+            --rgb-color-gray7-freeze: 87, 87, 87;
+          
+
+            --color-gray6: #888888;
+            --color-gray6-freeze: #888888;
+            --rgb-color-gray6: 136, 136, 136;
+            --rgb-color-gray6-freeze: 136, 136, 136;
+          
+
+            --color-gray5: #b3b3b3;
+            --color-gray5-freeze: #b3b3b3;
+            --rgb-color-gray5: 179, 179, 179;
+            --rgb-color-gray5-freeze: 179, 179, 179;
+          
+
+            --color-gray4: #dbdbdb;
+            --color-gray4-freeze: #dbdbdb;
+            --rgb-color-gray4: 219, 219, 219;
+            --rgb-color-gray4-freeze: 219, 219, 219;
+          
+
+            --color-gray3: #e9e9e9;
+            --color-gray3-freeze: #e9e9e9;
+            --rgb-color-gray3: 233, 233, 233;
+            --rgb-color-gray3-freeze: 233, 233, 233;
+          
+
+            --color-gray2: #f3f3f3;
+            --color-gray2-freeze: #f3f3f3;
+            --rgb-color-gray2: 243, 243, 243;
+            --rgb-color-gray2-freeze: 243, 243, 243;
+          
+
+            --color-gray1: #fafafa;
+            --color-gray1-freeze: #fafafa;
+            --rgb-color-gray1: 250, 250, 250;
+            --rgb-color-gray1-freeze: 250, 250, 250;
+          
+
+            --color-light: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-light: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+        }
+        .veda-color-stile.dark {
+          
+          --color-primary: #bfff00;
+          --rgb-color-primary: 191, 255, 0;
+          
+        
+
+          --color-secondary: #ffe70a;
+          --rgb-color-secondary: 255, 231, 10;
+          
+        
+
+          --color-tertiary: #ff6a6a;
+          --rgb-color-tertiary: 255, 106, 106;
+          
+        
+
+          --color-quaternary: #73fba3;
+          --rgb-color-quaternary: 115, 251, 163;
+          
+        
+
+          --color-dark: #ffffff;
+          --rgb-color-dark: 255, 255, 255;
+          
+        
+
+          --color-gray9: #fafafa;
+          --rgb-color-gray9: 250, 250, 250;
+          
+        
+
+          --color-gray8: #f3f3f3;
+          --rgb-color-gray8: 243, 243, 243;
+          
+        
+
+          --color-gray7: #e9e9e9;
+          --rgb-color-gray7: 233, 233, 233;
+          
+        
+
+          --color-gray6: #dbdbdb;
+          --rgb-color-gray6: 219, 219, 219;
+          
+        
+
+          --color-gray5: #b3b3b3;
+          --rgb-color-gray5: 179, 179, 179;
+          
+        
+
+          --color-gray4: #888888;
+          --rgb-color-gray4: 136, 136, 136;
+          
+        
+
+          --color-gray3: #575757;
+          --rgb-color-gray3: 87, 87, 87;
+          
+        
+
+          --color-gray2: #3e3e3e;
+          --rgb-color-gray2: 62, 62, 62;
+          
+        
+
+          --color-gray1: #232323;
+          --rgb-color-gray1: 35, 35, 35;
+          
+        
+
+          --color-light: #000000;
+          --rgb-color-light: 0, 0, 0;
+          
+        
+        }
+      
+
+        .veda-color-dark-stile {
+          
+            --color-primary: #bfff00;
+            --color-primary-freeze: #bfff00;
+            --rgb-color-primary: 191, 255, 0;
+            --rgb-color-primary-freeze: 191, 255, 0;
+          
+
+            --color-secondary: #ffe70a;
+            --color-secondary-freeze: #ffe70a;
+            --rgb-color-secondary: 255, 231, 10;
+            --rgb-color-secondary-freeze: 255, 231, 10;
+          
+
+            --color-tertiary: #ff6a6a;
+            --color-tertiary-freeze: #ff6a6a;
+            --rgb-color-tertiary: 255, 106, 106;
+            --rgb-color-tertiary-freeze: 255, 106, 106;
+          
+
+            --color-quaternary: #73fba3;
+            --color-quaternary-freeze: #73fba3;
+            --rgb-color-quaternary: 115, 251, 163;
+            --rgb-color-quaternary-freeze: 115, 251, 163;
+          
+
+            --color-dark: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-dark: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+
+            --color-gray9: #fafafa;
+            --color-gray1-freeze: #fafafa;
+            --rgb-color-gray9: 250, 250, 250;
+            --rgb-color-gray1-freeze: 250, 250, 250;
+          
+
+            --color-gray8: #f3f3f3;
+            --color-gray2-freeze: #f3f3f3;
+            --rgb-color-gray8: 243, 243, 243;
+            --rgb-color-gray2-freeze: 243, 243, 243;
+          
+
+            --color-gray7: #e9e9e9;
+            --color-gray3-freeze: #e9e9e9;
+            --rgb-color-gray7: 233, 233, 233;
+            --rgb-color-gray3-freeze: 233, 233, 233;
+          
+
+            --color-gray6: #dbdbdb;
+            --color-gray4-freeze: #dbdbdb;
+            --rgb-color-gray6: 219, 219, 219;
+            --rgb-color-gray4-freeze: 219, 219, 219;
+          
+
+            --color-gray5: #b3b3b3;
+            --color-gray5-freeze: #b3b3b3;
+            --rgb-color-gray5: 179, 179, 179;
+            --rgb-color-gray5-freeze: 179, 179, 179;
+          
+
+            --color-gray4: #888888;
+            --color-gray6-freeze: #888888;
+            --rgb-color-gray4: 136, 136, 136;
+            --rgb-color-gray6-freeze: 136, 136, 136;
+          
+
+            --color-gray3: #575757;
+            --color-gray7-freeze: #575757;
+            --rgb-color-gray3: 87, 87, 87;
+            --rgb-color-gray7-freeze: 87, 87, 87;
+          
+
+            --color-gray2: #3e3e3e;
+            --color-gray8-freeze: #3e3e3e;
+            --rgb-color-gray2: 62, 62, 62;
+            --rgb-color-gray8-freeze: 62, 62, 62;
+          
+
+            --color-gray1: #232323;
+            --color-gray9-freeze: #232323;
+            --rgb-color-gray1: 35, 35, 35;
+            --rgb-color-gray9-freeze: 35, 35, 35;
+          
+
+            --color-light: #000000;
+            --color-dark-freeze: #000000;
+            --rgb-color-light: 0, 0, 0;
+            --rgb-color-dark-freeze: 0, 0, 0;
+          
+        }
+        .veda-color-dark-stile.dark {
+          
+          --color-primary: #bfff00;
+          --rgb-color-primary: 191, 255, 0;
+          --color-primary-freeze: #bfff00;
+--rgb-color-primary-freeze: 191, 255, 0;
+        
+
+          --color-secondary: #ffe70a;
+          --rgb-color-secondary: 255, 231, 10;
+          --color-secondary-freeze: #ffe70a;
+--rgb-color-secondary-freeze: 255, 231, 10;
+        
+
+          --color-tertiary: #ff6a6a;
+          --rgb-color-tertiary: 255, 106, 106;
+          --color-tertiary-freeze: #ff6a6a;
+--rgb-color-tertiary-freeze: 255, 106, 106;
+        
+
+          --color-quaternary: #73fba3;
+          --rgb-color-quaternary: 115, 251, 163;
+          --color-quaternary-freeze: #73fba3;
+--rgb-color-quaternary-freeze: 115, 251, 163;
+        
+
+          --color-dark: #000000;
+          --rgb-color-dark: 0, 0, 0;
+          --color-light-freeze: #000000;
+--rgb-color-light-freeze: 0, 0, 0;
+        
+
+          --color-gray9: #232323;
+          --rgb-color-gray9: 35, 35, 35;
+          --color-gray1-freeze: #232323;
+--rgb-color-gray1-freeze: 35, 35, 35;
+        
+
+          --color-gray8: #3e3e3e;
+          --rgb-color-gray8: 62, 62, 62;
+          --color-gray2-freeze: #3e3e3e;
+--rgb-color-gray2-freeze: 62, 62, 62;
+        
+
+          --color-gray7: #575757;
+          --rgb-color-gray7: 87, 87, 87;
+          --color-gray3-freeze: #575757;
+--rgb-color-gray3-freeze: 87, 87, 87;
+        
+
+          --color-gray6: #888888;
+          --rgb-color-gray6: 136, 136, 136;
+          --color-gray4-freeze: #888888;
+--rgb-color-gray4-freeze: 136, 136, 136;
+        
+
+          --color-gray5: #b3b3b3;
+          --rgb-color-gray5: 179, 179, 179;
+          --color-gray5-freeze: #b3b3b3;
+--rgb-color-gray5-freeze: 179, 179, 179;
+        
+
+          --color-gray4: #dbdbdb;
+          --rgb-color-gray4: 219, 219, 219;
+          --color-gray6-freeze: #dbdbdb;
+--rgb-color-gray6-freeze: 219, 219, 219;
+        
+
+          --color-gray3: #e9e9e9;
+          --rgb-color-gray3: 233, 233, 233;
+          --color-gray7-freeze: #e9e9e9;
+--rgb-color-gray7-freeze: 233, 233, 233;
+        
+
+          --color-gray2: #f3f3f3;
+          --rgb-color-gray2: 243, 243, 243;
+          --color-gray8-freeze: #f3f3f3;
+--rgb-color-gray8-freeze: 243, 243, 243;
+        
+
+          --color-gray1: #fafafa;
+          --rgb-color-gray1: 250, 250, 250;
+          --color-gray9-freeze: #fafafa;
+--rgb-color-gray9-freeze: 250, 250, 250;
+        
+
+          --color-light: #ffffff;
+          --rgb-color-light: 255, 255, 255;
+          --color-dark-freeze: #ffffff;
+--rgb-color-dark-freeze: 255, 255, 255;
+        
+        }
+      
+
+        .veda-color-visor {
+          
+            --color-primary: #87BD8F;
+            --color-primary-freeze: #87BD8F;
+            --rgb-color-primary: 135, 189, 143;
+            --rgb-color-primary-freeze: 135, 189, 143;
+          
+
+            --color-secondary: #F07171;
+            --color-secondary-freeze: #F07171;
+            --rgb-color-secondary: 240, 113, 113;
+            --rgb-color-secondary-freeze: 240, 113, 113;
+          
+
+            --color-tertiary: #5e8c65;
+            --color-tertiary-freeze: #5e8c65;
+            --rgb-color-tertiary: 94, 140, 101;
+            --rgb-color-tertiary-freeze: 94, 140, 101;
+          
+
+            --color-quaternary: #FBC473;
+            --color-quaternary-freeze: #FBC473;
+            --rgb-color-quaternary: 251, 196, 115;
+            --rgb-color-quaternary-freeze: 251, 196, 115;
+          
+
+            --color-dark: #19271b;
+            --color-dark-freeze: #19271b;
+            --rgb-color-dark: 25, 39, 27;
+            --rgb-color-dark-freeze: 25, 39, 27;
+          
+
+            --color-gray9: #203122;
+            --color-gray9-freeze: #203122;
+            --rgb-color-gray9: 32, 49, 34;
+            --rgb-color-gray9-freeze: 32, 49, 34;
+          
+
+            --color-gray8: #394B3B;
+            --color-gray8-freeze: #394B3B;
+            --rgb-color-gray8: 57, 75, 59;
+            --rgb-color-gray8-freeze: 57, 75, 59;
+          
+
+            --color-gray7: #4C644D;
+            --color-gray7-freeze: #4C644D;
+            --rgb-color-gray7: 76, 100, 77;
+            --rgb-color-gray7-freeze: 76, 100, 77;
+          
+
+            --color-gray6: #657C67;
+            --color-gray6-freeze: #657C67;
+            --rgb-color-gray6: 101, 124, 103;
+            --rgb-color-gray6-freeze: 101, 124, 103;
+          
+
+            --color-gray5: #94AB95;
+            --color-gray5-freeze: #94AB95;
+            --rgb-color-gray5: 148, 171, 149;
+            --rgb-color-gray5-freeze: 148, 171, 149;
+          
+
+            --color-gray4: #BBCFBD;
+            --color-gray4-freeze: #BBCFBD;
+            --rgb-color-gray4: 187, 207, 189;
+            --rgb-color-gray4-freeze: 187, 207, 189;
+          
+
+            --color-gray3: #D0E2D2;
+            --color-gray3-freeze: #D0E2D2;
+            --rgb-color-gray3: 208, 226, 210;
+            --rgb-color-gray3-freeze: 208, 226, 210;
+          
+
+            --color-gray2: #DEEEE0;
+            --color-gray2-freeze: #DEEEE0;
+            --rgb-color-gray2: 222, 238, 224;
+            --rgb-color-gray2-freeze: 222, 238, 224;
+          
+
+            --color-gray1: #EEF8EF;
+            --color-gray1-freeze: #EEF8EF;
+            --rgb-color-gray1: 238, 248, 239;
+            --rgb-color-gray1-freeze: 238, 248, 239;
+          
+
+            --color-light: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-light: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+        }
+        .veda-color-visor.dark {
+          
+          --color-primary: #87BD8F;
+          --rgb-color-primary: 135, 189, 143;
+          
+        
+
+          --color-secondary: #F07171;
+          --rgb-color-secondary: 240, 113, 113;
+          
+        
+
+          --color-tertiary: #5e8c65;
+          --rgb-color-tertiary: 94, 140, 101;
+          
+        
+
+          --color-quaternary: #FBC473;
+          --rgb-color-quaternary: 251, 196, 115;
+          
+        
+
+          --color-dark: #ffffff;
+          --rgb-color-dark: 255, 255, 255;
+          
+        
+
+          --color-gray9: #EEF8EF;
+          --rgb-color-gray9: 238, 248, 239;
+          
+        
+
+          --color-gray8: #DEEEE0;
+          --rgb-color-gray8: 222, 238, 224;
+          
+        
+
+          --color-gray7: #D0E2D2;
+          --rgb-color-gray7: 208, 226, 210;
+          
+        
+
+          --color-gray6: #BBCFBD;
+          --rgb-color-gray6: 187, 207, 189;
+          
+        
+
+          --color-gray5: #94AB95;
+          --rgb-color-gray5: 148, 171, 149;
+          
+        
+
+          --color-gray4: #657C67;
+          --rgb-color-gray4: 101, 124, 103;
+          
+        
+
+          --color-gray3: #4C644D;
+          --rgb-color-gray3: 76, 100, 77;
+          
+        
+
+          --color-gray2: #394B3B;
+          --rgb-color-gray2: 57, 75, 59;
+          
+        
+
+          --color-gray1: #203122;
+          --rgb-color-gray1: 32, 49, 34;
+          
+        
+
+          --color-light: #19271b;
+          --rgb-color-light: 25, 39, 27;
+          
+        
+        }
+      
+
+        .veda-color-dark-visor {
+          
+            --color-primary: #87BD8F;
+            --color-primary-freeze: #87BD8F;
+            --rgb-color-primary: 135, 189, 143;
+            --rgb-color-primary-freeze: 135, 189, 143;
+          
+
+            --color-secondary: #F07171;
+            --color-secondary-freeze: #F07171;
+            --rgb-color-secondary: 240, 113, 113;
+            --rgb-color-secondary-freeze: 240, 113, 113;
+          
+
+            --color-tertiary: #5e8c65;
+            --color-tertiary-freeze: #5e8c65;
+            --rgb-color-tertiary: 94, 140, 101;
+            --rgb-color-tertiary-freeze: 94, 140, 101;
+          
+
+            --color-quaternary: #FBC473;
+            --color-quaternary-freeze: #FBC473;
+            --rgb-color-quaternary: 251, 196, 115;
+            --rgb-color-quaternary-freeze: 251, 196, 115;
+          
+
+            --color-dark: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-dark: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+
+            --color-gray9: #EEF8EF;
+            --color-gray1-freeze: #EEF8EF;
+            --rgb-color-gray9: 238, 248, 239;
+            --rgb-color-gray1-freeze: 238, 248, 239;
+          
+
+            --color-gray8: #DEEEE0;
+            --color-gray2-freeze: #DEEEE0;
+            --rgb-color-gray8: 222, 238, 224;
+            --rgb-color-gray2-freeze: 222, 238, 224;
+          
+
+            --color-gray7: #D0E2D2;
+            --color-gray3-freeze: #D0E2D2;
+            --rgb-color-gray7: 208, 226, 210;
+            --rgb-color-gray3-freeze: 208, 226, 210;
+          
+
+            --color-gray6: #BBCFBD;
+            --color-gray4-freeze: #BBCFBD;
+            --rgb-color-gray6: 187, 207, 189;
+            --rgb-color-gray4-freeze: 187, 207, 189;
+          
+
+            --color-gray5: #94AB95;
+            --color-gray5-freeze: #94AB95;
+            --rgb-color-gray5: 148, 171, 149;
+            --rgb-color-gray5-freeze: 148, 171, 149;
+          
+
+            --color-gray4: #657C67;
+            --color-gray6-freeze: #657C67;
+            --rgb-color-gray4: 101, 124, 103;
+            --rgb-color-gray6-freeze: 101, 124, 103;
+          
+
+            --color-gray3: #4C644D;
+            --color-gray7-freeze: #4C644D;
+            --rgb-color-gray3: 76, 100, 77;
+            --rgb-color-gray7-freeze: 76, 100, 77;
+          
+
+            --color-gray2: #394B3B;
+            --color-gray8-freeze: #394B3B;
+            --rgb-color-gray2: 57, 75, 59;
+            --rgb-color-gray8-freeze: 57, 75, 59;
+          
+
+            --color-gray1: #203122;
+            --color-gray9-freeze: #203122;
+            --rgb-color-gray1: 32, 49, 34;
+            --rgb-color-gray9-freeze: 32, 49, 34;
+          
+
+            --color-light: #19271b;
+            --color-dark-freeze: #19271b;
+            --rgb-color-light: 25, 39, 27;
+            --rgb-color-dark-freeze: 25, 39, 27;
+          
+        }
+        .veda-color-dark-visor.dark {
+          
+          --color-primary: #87BD8F;
+          --rgb-color-primary: 135, 189, 143;
+          --color-primary-freeze: #87BD8F;
+--rgb-color-primary-freeze: 135, 189, 143;
+        
+
+          --color-secondary: #F07171;
+          --rgb-color-secondary: 240, 113, 113;
+          --color-secondary-freeze: #F07171;
+--rgb-color-secondary-freeze: 240, 113, 113;
+        
+
+          --color-tertiary: #5e8c65;
+          --rgb-color-tertiary: 94, 140, 101;
+          --color-tertiary-freeze: #5e8c65;
+--rgb-color-tertiary-freeze: 94, 140, 101;
+        
+
+          --color-quaternary: #FBC473;
+          --rgb-color-quaternary: 251, 196, 115;
+          --color-quaternary-freeze: #FBC473;
+--rgb-color-quaternary-freeze: 251, 196, 115;
+        
+
+          --color-dark: #19271b;
+          --rgb-color-dark: 25, 39, 27;
+          --color-light-freeze: #19271b;
+--rgb-color-light-freeze: 25, 39, 27;
+        
+
+          --color-gray9: #203122;
+          --rgb-color-gray9: 32, 49, 34;
+          --color-gray1-freeze: #203122;
+--rgb-color-gray1-freeze: 32, 49, 34;
+        
+
+          --color-gray8: #394B3B;
+          --rgb-color-gray8: 57, 75, 59;
+          --color-gray2-freeze: #394B3B;
+--rgb-color-gray2-freeze: 57, 75, 59;
+        
+
+          --color-gray7: #4C644D;
+          --rgb-color-gray7: 76, 100, 77;
+          --color-gray3-freeze: #4C644D;
+--rgb-color-gray3-freeze: 76, 100, 77;
+        
+
+          --color-gray6: #657C67;
+          --rgb-color-gray6: 101, 124, 103;
+          --color-gray4-freeze: #657C67;
+--rgb-color-gray4-freeze: 101, 124, 103;
+        
+
+          --color-gray5: #94AB95;
+          --rgb-color-gray5: 148, 171, 149;
+          --color-gray5-freeze: #94AB95;
+--rgb-color-gray5-freeze: 148, 171, 149;
+        
+
+          --color-gray4: #BBCFBD;
+          --rgb-color-gray4: 187, 207, 189;
+          --color-gray6-freeze: #BBCFBD;
+--rgb-color-gray6-freeze: 187, 207, 189;
+        
+
+          --color-gray3: #D0E2D2;
+          --rgb-color-gray3: 208, 226, 210;
+          --color-gray7-freeze: #D0E2D2;
+--rgb-color-gray7-freeze: 208, 226, 210;
+        
+
+          --color-gray2: #DEEEE0;
+          --rgb-color-gray2: 222, 238, 224;
+          --color-gray8-freeze: #DEEEE0;
+--rgb-color-gray8-freeze: 222, 238, 224;
+        
+
+          --color-gray1: #EEF8EF;
+          --rgb-color-gray1: 238, 248, 239;
+          --color-gray9-freeze: #EEF8EF;
+--rgb-color-gray9-freeze: 238, 248, 239;
+        
+
+          --color-light: #ffffff;
+          --rgb-color-light: 255, 255, 255;
+          --color-dark-freeze: #ffffff;
+--rgb-color-dark-freeze: 255, 255, 255;
+        
+        }
+      
+
+        .veda-color-clave {
+          
+            --color-primary: #4840D8;
+            --color-primary-freeze: #4840D8;
+            --rgb-color-primary: 72, 64, 216;
+            --rgb-color-primary-freeze: 72, 64, 216;
+          
+
+            --color-secondary: #EA7E4C;
+            --color-secondary-freeze: #EA7E4C;
+            --rgb-color-secondary: 234, 126, 76;
+            --rgb-color-secondary-freeze: 234, 126, 76;
+          
+
+            --color-tertiary: #1B3839;
+            --color-tertiary-freeze: #1B3839;
+            --rgb-color-tertiary: 27, 56, 57;
+            --rgb-color-tertiary-freeze: 27, 56, 57;
+          
+
+            --color-quaternary: #EEF9FE;
+            --color-quaternary-freeze: #EEF9FE;
+            --rgb-color-quaternary: 238, 249, 254;
+            --rgb-color-quaternary-freeze: 238, 249, 254;
+          
+
+            --color-dark: #080626;
+            --color-dark-freeze: #080626;
+            --rgb-color-dark: 8, 6, 38;
+            --rgb-color-dark-freeze: 8, 6, 38;
+          
+
+            --color-gray9: #211F3C;
+            --color-gray9-freeze: #211F3C;
+            --rgb-color-gray9: 33, 31, 60;
+            --rgb-color-gray9-freeze: 33, 31, 60;
+          
+
+            --color-gray8: #393851;
+            --color-gray8-freeze: #393851;
+            --rgb-color-gray8: 57, 56, 81;
+            --rgb-color-gray8-freeze: 57, 56, 81;
+          
+
+            --color-gray7: #525167;
+            --color-gray7-freeze: #525167;
+            --rgb-color-gray7: 82, 81, 103;
+            --rgb-color-gray7-freeze: 82, 81, 103;
+          
+
+            --color-gray6: #838293;
+            --color-gray6-freeze: #838293;
+            --rgb-color-gray6: 131, 130, 147;
+            --rgb-color-gray6-freeze: 131, 130, 147;
+          
+
+            --color-gray5: #9C9BA8;
+            --color-gray5-freeze: #9C9BA8;
+            --rgb-color-gray5: 156, 155, 168;
+            --rgb-color-gray5-freeze: 156, 155, 168;
+          
+
+            --color-gray4: #B5B4BE;
+            --color-gray4-freeze: #B5B4BE;
+            --rgb-color-gray4: 181, 180, 190;
+            --rgb-color-gray4-freeze: 181, 180, 190;
+          
+
+            --color-gray3: #CECDD4;
+            --color-gray3-freeze: #CECDD4;
+            --rgb-color-gray3: 206, 205, 212;
+            --rgb-color-gray3-freeze: 206, 205, 212;
+          
+
+            --color-gray2: #E6E6E9;
+            --color-gray2-freeze: #E6E6E9;
+            --rgb-color-gray2: 230, 230, 233;
+            --rgb-color-gray2-freeze: 230, 230, 233;
+          
+
+            --color-gray1: #F3F3F4;
+            --color-gray1-freeze: #F3F3F4;
+            --rgb-color-gray1: 243, 243, 244;
+            --rgb-color-gray1-freeze: 243, 243, 244;
+          
+
+            --color-light: #FFFFFF;
+            --color-light-freeze: #FFFFFF;
+            --rgb-color-light: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+        }
+        .veda-color-clave.dark {
+          
+          --color-primary: #4840D8;
+          --rgb-color-primary: 72, 64, 216;
+          
+        
+
+          --color-secondary: #EA7E4C;
+          --rgb-color-secondary: 234, 126, 76;
+          
+        
+
+          --color-tertiary: #1B3839;
+          --rgb-color-tertiary: 27, 56, 57;
+          
+        
+
+          --color-quaternary: #EEF9FE;
+          --rgb-color-quaternary: 238, 249, 254;
+          
+        
+
+          --color-dark: #ffffff;
+          --rgb-color-dark: 255, 255, 255;
+          
+        
+
+          --color-gray9: #F3F3F4;
+          --rgb-color-gray9: 243, 243, 244;
+          
+        
+
+          --color-gray8: #E6E6E9;
+          --rgb-color-gray8: 230, 230, 233;
+          
+        
+
+          --color-gray7: #CECDD4;
+          --rgb-color-gray7: 206, 205, 212;
+          
+        
+
+          --color-gray6: #B5B4BE;
+          --rgb-color-gray6: 181, 180, 190;
+          
+        
+
+          --color-gray5: #9C9BA8;
+          --rgb-color-gray5: 156, 155, 168;
+          
+        
+
+          --color-gray4: #838293;
+          --rgb-color-gray4: 131, 130, 147;
+          
+        
+
+          --color-gray3: #525167;
+          --rgb-color-gray3: 82, 81, 103;
+          
+        
+
+          --color-gray2: #393851;
+          --rgb-color-gray2: 57, 56, 81;
+          
+        
+
+          --color-gray1: #211F3C;
+          --rgb-color-gray1: 33, 31, 60;
+          
+        
+
+          --color-light: #080626;
+          --rgb-color-light: 8, 6, 38;
+          
+        
+        }
+      
+
+        .veda-color-dark-clave {
+          
+            --color-primary: #4840D8;
+            --color-primary-freeze: #4840D8;
+            --rgb-color-primary: 72, 64, 216;
+            --rgb-color-primary-freeze: 72, 64, 216;
+          
+
+            --color-secondary: #EA7E4C;
+            --color-secondary-freeze: #EA7E4C;
+            --rgb-color-secondary: 234, 126, 76;
+            --rgb-color-secondary-freeze: 234, 126, 76;
+          
+
+            --color-tertiary: #1B3839;
+            --color-tertiary-freeze: #1B3839;
+            --rgb-color-tertiary: 27, 56, 57;
+            --rgb-color-tertiary-freeze: 27, 56, 57;
+          
+
+            --color-quaternary: #EEF9FE;
+            --color-quaternary-freeze: #EEF9FE;
+            --rgb-color-quaternary: 238, 249, 254;
+            --rgb-color-quaternary-freeze: 238, 249, 254;
+          
+
+            --color-dark: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-dark: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+
+            --color-gray9: #F3F3F4;
+            --color-gray1-freeze: #F3F3F4;
+            --rgb-color-gray9: 243, 243, 244;
+            --rgb-color-gray1-freeze: 243, 243, 244;
+          
+
+            --color-gray8: #E6E6E9;
+            --color-gray2-freeze: #E6E6E9;
+            --rgb-color-gray8: 230, 230, 233;
+            --rgb-color-gray2-freeze: 230, 230, 233;
+          
+
+            --color-gray7: #CECDD4;
+            --color-gray3-freeze: #CECDD4;
+            --rgb-color-gray7: 206, 205, 212;
+            --rgb-color-gray3-freeze: 206, 205, 212;
+          
+
+            --color-gray6: #B5B4BE;
+            --color-gray4-freeze: #B5B4BE;
+            --rgb-color-gray6: 181, 180, 190;
+            --rgb-color-gray4-freeze: 181, 180, 190;
+          
+
+            --color-gray5: #9C9BA8;
+            --color-gray5-freeze: #9C9BA8;
+            --rgb-color-gray5: 156, 155, 168;
+            --rgb-color-gray5-freeze: 156, 155, 168;
+          
+
+            --color-gray4: #838293;
+            --color-gray6-freeze: #838293;
+            --rgb-color-gray4: 131, 130, 147;
+            --rgb-color-gray6-freeze: 131, 130, 147;
+          
+
+            --color-gray3: #525167;
+            --color-gray7-freeze: #525167;
+            --rgb-color-gray3: 82, 81, 103;
+            --rgb-color-gray7-freeze: 82, 81, 103;
+          
+
+            --color-gray2: #393851;
+            --color-gray8-freeze: #393851;
+            --rgb-color-gray2: 57, 56, 81;
+            --rgb-color-gray8-freeze: 57, 56, 81;
+          
+
+            --color-gray1: #211F3C;
+            --color-gray9-freeze: #211F3C;
+            --rgb-color-gray1: 33, 31, 60;
+            --rgb-color-gray9-freeze: 33, 31, 60;
+          
+
+            --color-light: #080626;
+            --color-dark-freeze: #080626;
+            --rgb-color-light: 8, 6, 38;
+            --rgb-color-dark-freeze: 8, 6, 38;
+          
+        }
+        .veda-color-dark-clave.dark {
+          
+          --color-primary: #4840D8;
+          --rgb-color-primary: 72, 64, 216;
+          --color-primary-freeze: #4840D8;
+--rgb-color-primary-freeze: 72, 64, 216;
+        
+
+          --color-secondary: #EA7E4C;
+          --rgb-color-secondary: 234, 126, 76;
+          --color-secondary-freeze: #EA7E4C;
+--rgb-color-secondary-freeze: 234, 126, 76;
+        
+
+          --color-tertiary: #1B3839;
+          --rgb-color-tertiary: 27, 56, 57;
+          --color-tertiary-freeze: #1B3839;
+--rgb-color-tertiary-freeze: 27, 56, 57;
+        
+
+          --color-quaternary: #EEF9FE;
+          --rgb-color-quaternary: 238, 249, 254;
+          --color-quaternary-freeze: #EEF9FE;
+--rgb-color-quaternary-freeze: 238, 249, 254;
+        
+
+          --color-dark: #080626;
+          --rgb-color-dark: 8, 6, 38;
+          --color-light-freeze: #080626;
+--rgb-color-light-freeze: 8, 6, 38;
+        
+
+          --color-gray9: #211F3C;
+          --rgb-color-gray9: 33, 31, 60;
+          --color-gray1-freeze: #211F3C;
+--rgb-color-gray1-freeze: 33, 31, 60;
+        
+
+          --color-gray8: #393851;
+          --rgb-color-gray8: 57, 56, 81;
+          --color-gray2-freeze: #393851;
+--rgb-color-gray2-freeze: 57, 56, 81;
+        
+
+          --color-gray7: #525167;
+          --rgb-color-gray7: 82, 81, 103;
+          --color-gray3-freeze: #525167;
+--rgb-color-gray3-freeze: 82, 81, 103;
+        
+
+          --color-gray6: #838293;
+          --rgb-color-gray6: 131, 130, 147;
+          --color-gray4-freeze: #838293;
+--rgb-color-gray4-freeze: 131, 130, 147;
+        
+
+          --color-gray5: #9C9BA8;
+          --rgb-color-gray5: 156, 155, 168;
+          --color-gray5-freeze: #9C9BA8;
+--rgb-color-gray5-freeze: 156, 155, 168;
+        
+
+          --color-gray4: #B5B4BE;
+          --rgb-color-gray4: 181, 180, 190;
+          --color-gray6-freeze: #B5B4BE;
+--rgb-color-gray6-freeze: 181, 180, 190;
+        
+
+          --color-gray3: #CECDD4;
+          --rgb-color-gray3: 206, 205, 212;
+          --color-gray7-freeze: #CECDD4;
+--rgb-color-gray7-freeze: 206, 205, 212;
+        
+
+          --color-gray2: #E6E6E9;
+          --rgb-color-gray2: 230, 230, 233;
+          --color-gray8-freeze: #E6E6E9;
+--rgb-color-gray8-freeze: 230, 230, 233;
+        
+
+          --color-gray1: #F3F3F4;
+          --rgb-color-gray1: 243, 243, 244;
+          --color-gray9-freeze: #F3F3F4;
+--rgb-color-gray9-freeze: 243, 243, 244;
+        
+
+          --color-light: #FFFFFF;
+          --rgb-color-light: 255, 255, 255;
+          --color-dark-freeze: #FFFFFF;
+--rgb-color-dark-freeze: 255, 255, 255;
+        
+        }
+      
+
+        .veda-color-maze {
+          
+            --color-primary: #EE6C4D;
+            --color-primary-freeze: #EE6C4D;
+            --rgb-color-primary: 238, 108, 77;
+            --rgb-color-primary-freeze: 238, 108, 77;
+          
+
+            --color-secondary: #7EB3D1;
+            --color-secondary-freeze: #7EB3D1;
+            --rgb-color-secondary: 126, 179, 209;
+            --rgb-color-secondary-freeze: 126, 179, 209;
+          
+
+            --color-tertiary: #ee4d9b;
+            --color-tertiary-freeze: #ee4d9b;
+            --rgb-color-tertiary: 238, 77, 155;
+            --rgb-color-tertiary-freeze: 238, 77, 155;
+          
+
+            --color-quaternary: #E0FBFC;
+            --color-quaternary-freeze: #E0FBFC;
+            --rgb-color-quaternary: 224, 251, 252;
+            --rgb-color-quaternary-freeze: 224, 251, 252;
+          
+
+            --color-dark: #092142;
+            --color-dark-freeze: #092142;
+            --rgb-color-dark: 9, 33, 66;
+            --rgb-color-dark-freeze: 9, 33, 66;
+          
+
+            --color-gray9: #223755;
+            --color-gray9-freeze: #223755;
+            --rgb-color-gray9: 34, 55, 85;
+            --rgb-color-gray9-freeze: 34, 55, 85;
+          
+
+            --color-gray8: #3A4D68;
+            --color-gray8-freeze: #3A4D68;
+            --rgb-color-gray8: 58, 77, 104;
+            --rgb-color-gray8-freeze: 58, 77, 104;
+          
+
+            --color-gray7: #53647B;
+            --color-gray7-freeze: #53647B;
+            --rgb-color-gray7: 83, 100, 123;
+            --rgb-color-gray7-freeze: 83, 100, 123;
+          
+
+            --color-gray6: #8490A0;
+            --color-gray6-freeze: #8490A0;
+            --rgb-color-gray6: 132, 144, 160;
+            --rgb-color-gray6-freeze: 132, 144, 160;
+          
+
+            --color-gray5: #9DA6B3;
+            --color-gray5-freeze: #9DA6B3;
+            --rgb-color-gray5: 157, 166, 179;
+            --rgb-color-gray5-freeze: 157, 166, 179;
+          
+
+            --color-gray4: #B5BDC6;
+            --color-gray4-freeze: #B5BDC6;
+            --rgb-color-gray4: 181, 189, 198;
+            --rgb-color-gray4-freeze: 181, 189, 198;
+          
+
+            --color-gray3: #CED3D9;
+            --color-gray3-freeze: #CED3D9;
+            --rgb-color-gray3: 206, 211, 217;
+            --rgb-color-gray3-freeze: 206, 211, 217;
+          
+
+            --color-gray2: #E6E9EC;
+            --color-gray2-freeze: #E6E9EC;
+            --rgb-color-gray2: 230, 233, 236;
+            --rgb-color-gray2-freeze: 230, 233, 236;
+          
+
+            --color-gray1: #F3F4F6;
+            --color-gray1-freeze: #F3F4F6;
+            --rgb-color-gray1: 243, 244, 246;
+            --rgb-color-gray1-freeze: 243, 244, 246;
+          
+
+            --color-light: #FFFFFF;
+            --color-light-freeze: #FFFFFF;
+            --rgb-color-light: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+        }
+        .veda-color-maze.dark {
+          
+          --color-primary: #EE6C4D;
+          --rgb-color-primary: 238, 108, 77;
+          
+        
+
+          --color-secondary: #7EB3D1;
+          --rgb-color-secondary: 126, 179, 209;
+          
+        
+
+          --color-tertiary: #ee4d9b;
+          --rgb-color-tertiary: 238, 77, 155;
+          
+        
+
+          --color-quaternary: #E0FBFC;
+          --rgb-color-quaternary: 224, 251, 252;
+          
+        
+
+          --color-dark: #ffffff;
+          --rgb-color-dark: 255, 255, 255;
+          
+        
+
+          --color-gray9: #F3F4F6;
+          --rgb-color-gray9: 243, 244, 246;
+          
+        
+
+          --color-gray8: #E6E9EC;
+          --rgb-color-gray8: 230, 233, 236;
+          
+        
+
+          --color-gray7: #CED3D9;
+          --rgb-color-gray7: 206, 211, 217;
+          
+        
+
+          --color-gray6: #B5BDC6;
+          --rgb-color-gray6: 181, 189, 198;
+          
+        
+
+          --color-gray5: #9DA6B3;
+          --rgb-color-gray5: 157, 166, 179;
+          
+        
+
+          --color-gray4: #8490A0;
+          --rgb-color-gray4: 132, 144, 160;
+          
+        
+
+          --color-gray3: #53647B;
+          --rgb-color-gray3: 83, 100, 123;
+          
+        
+
+          --color-gray2: #3A4D68;
+          --rgb-color-gray2: 58, 77, 104;
+          
+        
+
+          --color-gray1: #223755;
+          --rgb-color-gray1: 34, 55, 85;
+          
+        
+
+          --color-light: #092142;
+          --rgb-color-light: 9, 33, 66;
+          
+        
+        }
+      
+
+        .veda-color-dark-maze {
+          
+            --color-primary: #EE6C4D;
+            --color-primary-freeze: #EE6C4D;
+            --rgb-color-primary: 238, 108, 77;
+            --rgb-color-primary-freeze: 238, 108, 77;
+          
+
+            --color-secondary: #7EB3D1;
+            --color-secondary-freeze: #7EB3D1;
+            --rgb-color-secondary: 126, 179, 209;
+            --rgb-color-secondary-freeze: 126, 179, 209;
+          
+
+            --color-tertiary: #ee4d9b;
+            --color-tertiary-freeze: #ee4d9b;
+            --rgb-color-tertiary: 238, 77, 155;
+            --rgb-color-tertiary-freeze: 238, 77, 155;
+          
+
+            --color-quaternary: #E0FBFC;
+            --color-quaternary-freeze: #E0FBFC;
+            --rgb-color-quaternary: 224, 251, 252;
+            --rgb-color-quaternary-freeze: 224, 251, 252;
+          
+
+            --color-dark: #ffffff;
+            --color-light-freeze: #ffffff;
+            --rgb-color-dark: 255, 255, 255;
+            --rgb-color-light-freeze: 255, 255, 255;
+          
+
+            --color-gray9: #F3F4F6;
+            --color-gray1-freeze: #F3F4F6;
+            --rgb-color-gray9: 243, 244, 246;
+            --rgb-color-gray1-freeze: 243, 244, 246;
+          
+
+            --color-gray8: #E6E9EC;
+            --color-gray2-freeze: #E6E9EC;
+            --rgb-color-gray8: 230, 233, 236;
+            --rgb-color-gray2-freeze: 230, 233, 236;
+          
+
+            --color-gray7: #CED3D9;
+            --color-gray3-freeze: #CED3D9;
+            --rgb-color-gray7: 206, 211, 217;
+            --rgb-color-gray3-freeze: 206, 211, 217;
+          
+
+            --color-gray6: #B5BDC6;
+            --color-gray4-freeze: #B5BDC6;
+            --rgb-color-gray6: 181, 189, 198;
+            --rgb-color-gray4-freeze: 181, 189, 198;
+          
+
+            --color-gray5: #9DA6B3;
+            --color-gray5-freeze: #9DA6B3;
+            --rgb-color-gray5: 157, 166, 179;
+            --rgb-color-gray5-freeze: 157, 166, 179;
+          
+
+            --color-gray4: #8490A0;
+            --color-gray6-freeze: #8490A0;
+            --rgb-color-gray4: 132, 144, 160;
+            --rgb-color-gray6-freeze: 132, 144, 160;
+          
+
+            --color-gray3: #53647B;
+            --color-gray7-freeze: #53647B;
+            --rgb-color-gray3: 83, 100, 123;
+            --rgb-color-gray7-freeze: 83, 100, 123;
+          
+
+            --color-gray2: #3A4D68;
+            --color-gray8-freeze: #3A4D68;
+            --rgb-color-gray2: 58, 77, 104;
+            --rgb-color-gray8-freeze: 58, 77, 104;
+          
+
+            --color-gray1: #223755;
+            --color-gray9-freeze: #223755;
+            --rgb-color-gray1: 34, 55, 85;
+            --rgb-color-gray9-freeze: 34, 55, 85;
+          
+
+            --color-light: #092142;
+            --color-dark-freeze: #092142;
+            --rgb-color-light: 9, 33, 66;
+            --rgb-color-dark-freeze: 9, 33, 66;
+          
+        }
+        .veda-color-dark-maze.dark {
+          
+          --color-primary: #EE6C4D;
+          --rgb-color-primary: 238, 108, 77;
+          --color-primary-freeze: #EE6C4D;
+--rgb-color-primary-freeze: 238, 108, 77;
+        
+
+          --color-secondary: #7EB3D1;
+          --rgb-color-secondary: 126, 179, 209;
+          --color-secondary-freeze: #7EB3D1;
+--rgb-color-secondary-freeze: 126, 179, 209;
+        
+
+          --color-tertiary: #ee4d9b;
+          --rgb-color-tertiary: 238, 77, 155;
+          --color-tertiary-freeze: #ee4d9b;
+--rgb-color-tertiary-freeze: 238, 77, 155;
+        
+
+          --color-quaternary: #E0FBFC;
+          --rgb-color-quaternary: 224, 251, 252;
+          --color-quaternary-freeze: #E0FBFC;
+--rgb-color-quaternary-freeze: 224, 251, 252;
+        
+
+          --color-dark: #092142;
+          --rgb-color-dark: 9, 33, 66;
+          --color-light-freeze: #092142;
+--rgb-color-light-freeze: 9, 33, 66;
+        
+
+          --color-gray9: #223755;
+          --rgb-color-gray9: 34, 55, 85;
+          --color-gray1-freeze: #223755;
+--rgb-color-gray1-freeze: 34, 55, 85;
+        
+
+          --color-gray8: #3A4D68;
+          --rgb-color-gray8: 58, 77, 104;
+          --color-gray2-freeze: #3A4D68;
+--rgb-color-gray2-freeze: 58, 77, 104;
+        
+
+          --color-gray7: #53647B;
+          --rgb-color-gray7: 83, 100, 123;
+          --color-gray3-freeze: #53647B;
+--rgb-color-gray3-freeze: 83, 100, 123;
+        
+
+          --color-gray6: #8490A0;
+          --rgb-color-gray6: 132, 144, 160;
+          --color-gray4-freeze: #8490A0;
+--rgb-color-gray4-freeze: 132, 144, 160;
+        
+
+          --color-gray5: #9DA6B3;
+          --rgb-color-gray5: 157, 166, 179;
+          --color-gray5-freeze: #9DA6B3;
+--rgb-color-gray5-freeze: 157, 166, 179;
+        
+
+          --color-gray4: #B5BDC6;
+          --rgb-color-gray4: 181, 189, 198;
+          --color-gray6-freeze: #B5BDC6;
+--rgb-color-gray6-freeze: 181, 189, 198;
+        
+
+          --color-gray3: #CED3D9;
+          --rgb-color-gray3: 206, 211, 217;
+          --color-gray7-freeze: #CED3D9;
+--rgb-color-gray7-freeze: 206, 211, 217;
+        
+
+          --color-gray2: #E6E9EC;
+          --rgb-color-gray2: 230, 233, 236;
+          --color-gray8-freeze: #E6E9EC;
+--rgb-color-gray8-freeze: 230, 233, 236;
+        
+
+          --color-gray1: #F3F4F6;
+          --rgb-color-gray1: 243, 244, 246;
+          --color-gray9-freeze: #F3F4F6;
+--rgb-color-gray9-freeze: 243, 244, 246;
+        
+
+          --color-light: #ffffff;
+          --rgb-color-light: 255, 255, 255;
+          --color-dark-freeze: #ffffff;
+--rgb-color-dark-freeze: 255, 255, 255;
+        
+        }
+      </style>
+  
+
+{% style %}
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_n3_normal_300.woff2?v=1684753276") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 300;
+      font-style: oblique;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_o3_oblique_300.woff2?v=1684753275") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_n4_normal_400.woff2?v=1684753276") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-style: oblique;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_o4_oblique_400.woff2?v=1684753275") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_n7_normal_700.woff2?v=1684753275") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 700;
+      font-style: oblique;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_o7_oblique_700.woff2?v=1684753275") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_n9_normal_900.woff2?v=1684753275") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Helvetica";
+      font-weight: 900;
+      font-style: oblique;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Helvetica_helvetica_o9_oblique_900.woff2?v=1684753275") format("woff2");
+    }
+  
+    @font-face {
+      font-family: "Playfair Display";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Playfair_Display_playfair_display_n4_normal_400.woff2?v=1684753596") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Playfair Display";
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Playfair_Display_playfair_display_i4_italic_400.woff2?v=1684753596") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Playfair Display";
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Playfair_Display_playfair_display_n7_normal_700.woff2?v=1684753596") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Playfair Display";
+      font-weight: 700;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Playfair_Display_playfair_display_i7_italic_700.woff2?v=1684753596") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Playfair Display";
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Playfair_Display_playfair_display_n9_normal_900.woff2?v=1684753596") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Playfair Display";
+      font-weight: 900;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Playfair_Display_playfair_display_i9_italic_900.woff2?v=1684753596") format("woff2");
+    }
+  
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_n1_normal_100.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 100;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_i1_italic_100.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_n3_normal_300.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_i3_italic_300.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_n4_normal_400.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_i4_italic_400.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_n5_normal_500.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_i5_italic_500.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_n7_normal_700.woff2?v=1684753597") format("woff2");
+    }
+  
+
+    @font-face {
+      font-family: "Roboto Mono";
+      font-weight: 700;
+      font-style: italic;
+      font-display: swap;
+      src: url("https://cdn.shopify.com/s/files/1/0732/6416/9268/files/VedaFont_Roboto_Mono_roboto_mono_i7_italic_700.woff2?v=1684753597") format("woff2");
+    }
+  {% endstyle %}
