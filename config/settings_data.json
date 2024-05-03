@@ -154,6 +154,36 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "219870436654832245": {
+        "type": "shopify:\/\/apps\/tabs-product-descriptions\/blocks\/main\/28f9d042-5143-4d85-bd90-2351b60871cf",
+        "disabled": false,
+        "settings": {
+          "tab_orientation": "vertical",
+          "tab_color_scheme": "light",
+          "tab_border_width": 1,
+          "tab_border_style": "solid",
+          "tab_border_opacity": 15,
+          "tab_font_size": "default",
+          "tab_font_weight": "default",
+          "tab_label_transform": "none",
+          "description_tab": true,
+          "open_first_tab_by_default": true,
+          "one_tab_open_at_a_time": true,
+          "icons_display": "vertical",
+          "icon_disclosure": "chevron_small",
+          "icon_weight": "normal",
+          "description_tab_icon": "none",
+          "description_tab_last": false,
+          "animate_tabs": true,
+          "open_duration": 200,
+          "close_duration": 200,
+          "easing": "ease-out",
+          "description_selector": "",
+          "tabs_selector": "",
+          "title_selector": "",
+          "include_css": true
+        }
       }
     },
     "color_schemes": {
