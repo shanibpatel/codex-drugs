@@ -325,21 +325,13 @@
           "settings": {
             "content___title": "Review"
           }
-        },
-        "content_rich_text_8tAfk7": {
-          "type": "content_rich_text",
-          "settings": {
-            "content___title": "Description",
-            "content___text": "<b>Uses:<\/b> -\n<br><br>• Weight management by<br><br>• Reduction in fat absorption."
-          }
         }
       },
       "block_order": [
         "bb15f4c4-b7a5-4e46-9300-214cad36d856",
         "8baf523f-c0be-45e4-8589-4857f205b259",
         "29e06dd2-61df-46ed-a3bf-3e06c04797b6",
-        "fc9a770f-0c01-4a76-af76-a3001cff5c37",
-        "content_rich_text_8tAfk7"
+        "fc9a770f-0c01-4a76-af76-a3001cff5c37"
       ],
       "settings": {
         "VEDA_select_1": "boxed",
