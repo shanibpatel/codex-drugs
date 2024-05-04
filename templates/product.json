@@ -6,13 +6,10 @@
       "settings": {
         "VEDA_select_1": "boxed",
         "VEDA_select_2": "none",
-        "VEDA_image_2": "",
-        "VEDA_color_1": "",
         "VEDA_video_1": "",
         "VEDA_switch_1": false,
         "VEDA_select_3": "cover",
         "VEDA_switch_2": false,
-        "VEDA_color_2": "",
         "VEDA_switch_3": false,
         "VEDA_color_3": "var(--color-gray2)",
         "VEDA_space_1": 20,
@@ -22,17 +19,8 @@
         "heading___title": "Breadcrumb",
         "heading___divider": "none",
         "heading___align": "left",
-        "VEDA_styleBox_1": "",
-        "VEDA_styleBox_2": "",
-        "heading___divider_color": "",
         "breadcrumb___separator": "<i class=\"far fa-chevron-right\"><\/i>",
         "VEDA_radioGroup_1": "flex-start",
-        "VEDA_styleBox_3": "",
-        "VEDA_styleBox_4": "",
-        "VEDA_styleBox_5": "",
-        "VEDA_styleBox_6": "",
-        "VEDA_styleBox_7": "",
-        "VEDA_styleBox_8": "",
         "color_scheme": "veda-color-default"
       }
     },
@@ -43,10 +31,6 @@
           "type": "content_badge",
           "settings": {
             "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": "",
-            "VEDA_styleBox_11": "",
-            "VEDA_styleBox_12": "",
             "VEDA_styleBox_13": "",
             "content___new_design__id": ""
           }
@@ -63,8 +47,6 @@
           "type": "content_price",
           "settings": {
             "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": "",
             "VEDA_styleBox_3": "",
             "VEDA_styleBox_4": "",
             "VEDA_styleBox_5": "",
@@ -82,9 +64,7 @@
         "545dd67b-a62a-4719-981d-8432749f27b9": {
           "type": "content_sku",
           "settings": {
-            "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": ""
+            "content___enable": true
           }
         },
         "4396d027-1d50-4c3f-9c96-ec4fa2af14e6": {
@@ -98,9 +78,7 @@
         "c3b31759-9fda-4d7d-81bf-bd180fe3ec55": {
           "type": "content_type",
           "settings": {
-            "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": ""
+            "content___enable": true
           }
         },
         "f4058e97-b509-47b3-90ba-d0a0a5800c80": {
@@ -109,8 +87,6 @@
             "content___enable": true,
             "VEDA_styleBox_7": "",
             "VEDA_styleBox_8": "",
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": "",
             "VEDA_styleBox_9": "",
             "VEDA_styleBox_10": "",
             "content___border_radius": 20,
@@ -122,8 +98,6 @@
           "type": "content_actions",
           "settings": {
             "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": "",
             "VEDA_switch_4": true,
             "VEDA_switch_5": true
           }
@@ -151,8 +125,6 @@
           "type": "content_collapse",
           "settings": {
             "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": "",
             "VEDA_icon_1": "<i class=\"fal fa-plus\"><\/i>",
             "VEDA_icon_2": "<i class=\"fal fa-minus\"><\/i>"
           }
@@ -162,10 +134,6 @@
           "settings": {
             "content___enable": true,
             "content___title": "Guarantee safe & secure checkout",
-            "VEDA_styleBox_7": "",
-            "VEDA_styleBox_8": "",
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": "",
             "content___items": "american_express, apple_pay, diners_club, discover, google_pay, master, paypal, shopify_pay, visa",
             "content___width_payment": 38
           }
@@ -175,11 +143,7 @@
           "settings": {
             "content___enable": true,
             "content___title": "Share",
-            "content___share_type": "facebook,twitter,pinterest,telegram,email,messenger",
-            "VEDA_styleBox_7": "",
-            "VEDA_styleBox_8": "",
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": ""
+            "content___share_type": "facebook,twitter,pinterest,telegram,email,messenger"
           }
         },
         "444e3f5d-ec20-481e-8927-4ad8d94522c6": {
@@ -188,13 +152,7 @@
             "collapse___enable": true,
             "collapse___icon": "<i class=\"far fa-shipping-fast\"><\/i>",
             "collapse___title": "Shipping Info",
-            "collapse___description": "<p>Return Policy: We will gladly accept returns for any reason within 30 days of receipt of delivery.<br><br>Processing Time: Allow 2-5 working days.<br><br>Order Received on Sunday or  during holidays,the dispatch time will be considered from the next working day.<\/p>",
-            "VEDA_styleBox_24": "",
-            "VEDA_styleBox_25": "",
-            "VEDA_styleBox_22": "",
-            "VEDA_styleBox_23": "",
-            "VEDA_styleBox_26": "",
-            "VEDA_styleBox_27": ""
+            "collapse___description": "<p>Return Policy: We will gladly accept returns for any reason within 30 days of receipt of delivery.<br>Availability: Ships anywhere in the United States<br>Processing Time: Allow 3-4 business days processing time for your order to ship.<\/p>"
           }
         },
         "adb0d232-64ca-48ce-a6e7-c6ff9fbd40c2": {
@@ -203,13 +161,7 @@
             "collapse___enable": true,
             "collapse___icon": "<i class=\"far fa-shopping-cart\"><\/i>",
             "collapse___title": "Order Info",
-            "collapse___description": "<p>Order in the next 13 hours 30 minutes to get it between Tuesday, Jan 24 and Saturday, Jan 28<\/p>",
-            "VEDA_styleBox_24": "",
-            "VEDA_styleBox_25": "",
-            "VEDA_styleBox_22": "",
-            "VEDA_styleBox_23": "",
-            "VEDA_styleBox_26": "",
-            "VEDA_styleBox_27": ""
+            "collapse___description": "<p>Order in the next 13 hours 30 minutes to get it between Tuesday, Jan 24 and Saturday, Jan 28<\/p>"
           }
         },
         "82015ff4-c7e1-4355-98dc-946d61bb40a1": {
@@ -217,17 +169,7 @@
           "settings": {
             "collapse___enable": true,
             "collapse___icon": "<i class=\"far fa-question-circle\"><\/i>",
-            "collapse___title": "Ask to question",
-            "VEDA_styleBox_24": "",
-            "VEDA_styleBox_25": "",
-            "VEDA_styleBox_22": "",
-            "VEDA_styleBox_23": "",
-            "VEDA_styleBox_28": "",
-            "VEDA_styleBox_29": "",
-            "VEDA_styleBox_30": "",
-            "VEDA_styleBox_31": "",
-            "VEDA_styleBox_32": "",
-            "VEDA_styleBox_33": ""
+            "collapse___title": "Ask to question"
           }
         }
       },
@@ -253,31 +195,20 @@
       "settings": {
         "VEDA_select_1": "boxed",
         "VEDA_select_2": "none",
-        "VEDA_image_2": "",
-        "VEDA_color_1": "",
         "VEDA_video_1": "",
         "VEDA_switch_1": false,
         "VEDA_select_3": "cover",
         "VEDA_switch_2": false,
-        "VEDA_color_2": "",
         "VEDA_switch_3": false,
         "VEDA_color_3": "var(--color-gray2)",
         "VEDA_space_1": 50,
         "VEDA_space_4": 50,
         "VEDA_switch_6": true,
-        "VEDA_styleBox_14": "",
-        "VEDA_styleBox_15": "",
         "VEDA_select_4": "dark",
-        "VEDA_styleBox_16": "",
-        "VEDA_styleBox_17": "",
         "VEDA_switch_7": true,
-        "VEDA_styleBox_18": "",
-        "VEDA_styleBox_19": "",
         "VEDA_select_5": "dark",
         "compare_action___enable": true,
         "compare_action___variant": "dark",
-        "VEDA_styleBox_20": "",
-        "VEDA_styleBox_21": "",
         "responsive___content__lg": 6,
         "responsive___content__md": 12,
         "responsive___content__sm": 12,
@@ -337,13 +268,10 @@
         "VEDA_select_1": "boxed",
         "VEDA_slider_2": 1,
         "VEDA_select_2": "none",
-        "VEDA_image_2": "",
-        "VEDA_color_1": "",
         "VEDA_video_1": "",
         "VEDA_switch_1": false,
         "VEDA_select_3": "cover",
         "VEDA_switch_2": false,
-        "VEDA_color_2": "",
         "VEDA_switch_3": false,
         "VEDA_color_3": "var(--color-gray2)",
         "VEDA_space_1": 50,
@@ -369,9 +297,7 @@
             "heading___enable": true,
             "heading___title": "Recently viewed products",
             "heading___title_tag_name": "h4",
-            "heading___align": "left",
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": ""
+            "heading___align": "left"
           }
         },
         "e2f49099-eb9a-4696-ac4c-c95c64e32c18": {
@@ -390,13 +316,11 @@
         "VEDA_select_1": "boxed",
         "VEDA_slider_2": 0,
         "VEDA_select_2": "color",
-        "VEDA_image_2": "",
         "VEDA_color_1": "var(--color-gray1)",
         "VEDA_video_1": "",
         "VEDA_switch_1": false,
         "VEDA_select_3": "cover",
         "VEDA_switch_2": false,
-        "VEDA_color_2": "",
         "VEDA_switch_3": false,
         "VEDA_color_3": "var(--color-gray2)",
         "VEDA_space_1": 50,
@@ -410,14 +334,6 @@
         "VEDA_slider_9": 2,
         "VEDA_styleBox_7": "",
         "VEDA_styleBox_8": "",
-        "VEDA_styleBox_9": "",
-        "VEDA_styleBox_10": "",
-        "VEDA_styleBox_11": "",
-        "VEDA_styleBox_12": "",
-        "VEDA_styleBox_13": "",
-        "VEDA_styleBox_14": "",
-        "VEDA_styleBox_15": "",
-        "VEDA_styleBox_16": "",
         "VEDA_flexOrder_1": "0",
         "VEDA_flexOrder_2": "1",
         "VEDA_flexOrder_3": "2",
@@ -425,43 +341,22 @@
         "VEDA_flexOrder_5": "4",
         "VEDA_slider_6": 15,
         "sale___enable": true,
-        "sale___design__css": "",
-        "sale___design__id": "",
         "new___enable": true,
-        "new___design__css": "",
-        "new___design__id": "",
         "VEDA_switch_7": true,
-        "VEDA_styleBox_17": "",
-        "VEDA_styleBox_18": "",
-        "VEDA_styleBox_19": "",
-        "VEDA_styleBox_20": "",
-        "VEDA_styleBox_21": "",
-        "VEDA_styleBox_22": "",
         "button_view_all___enable": true,
         "button_view_all___text": "{{'veda.sections.featured_collection.view_all' | t}}",
-        "VEDA_styleBox_23": "",
-        "VEDA_styleBox_24": "",
         "VEDA_switch_8": false,
-        "button_view_all___link": "",
         "VEDA_select_4": "link",
         "VEDA_select_5": "top",
         "button_view_all___align": "left",
         "VEDA_switch_9": true,
         "VEDA_icon_1": "<i class=\"far fa-long-arrow-right\"><\/i>",
-        "VEDA_styleBox_25": "",
-        "VEDA_styleBox_26": "",
         "VEDA_radioGroup_1": "right",
         "quick_view___enable": true,
         "quick_view___design__css": "",
         "quick_view___design__id": "",
         "VEDA_switch_10": true,
-        "VEDA_styleBox_27": "",
-        "VEDA_styleBox_28": "",
         "compare_action___enable": true,
-        "VEDA_styleBox_29": "",
-        "VEDA_styleBox_30": "",
-        "VEDA_styleBox_31": "",
-        "add_to_cart___design__id": "",
         "VEDA_switch_11": false,
         "slider_settings___delay": 4000,
         "slider_settings___loop": false,
@@ -470,10 +365,6 @@
         "VEDA_select_6": "middle",
         "VEDA_radioGroup_2": "flex-start",
         "VEDA_select_7": "circle_shadow",
-        "VEDA_styleBox_32": "",
-        "VEDA_styleBox_33": "",
-        "VEDA_styleBox_34": "",
-        "VEDA_styleBox_35": "",
         "VEDA_responsive_1": 6,
         "VEDA_responsive_2": 4,
         "VEDA_responsive_3": 2,
