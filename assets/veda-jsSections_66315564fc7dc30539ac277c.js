@@ -1,7 +1,7 @@
-function veda_fn_993bae7a98f44549b8ffa315eb61eb44 () {
+function veda_fn_4ab5235fa1ae443fa23523b79772f4bc () {
       
-  if (window.veda_fn_993bae7a98f44549b8ffa315eb61eb44Cleanup === undefined) {
-    window.veda_fn_993bae7a98f44549b8ffa315eb61eb44Cleanup = {
+  if (window.veda_fn_4ab5235fa1ae443fa23523b79772f4bcCleanup === undefined) {
+    window.veda_fn_4ab5235fa1ae443fa23523b79772f4bcCleanup = {
       listeners: [],
       push(listener) {
         this.listeners.push(listener);
@@ -12,7 +12,7 @@ function veda_fn_993bae7a98f44549b8ffa315eb61eb44 () {
       }
     }
   }
-  window.veda_fn_993bae7a98f44549b8ffa315eb61eb44Cleanup.cleanup();
+  window.veda_fn_4ab5235fa1ae443fa23523b79772f4bcCleanup.cleanup();
 
       try {
         const uniqueId = "id_cdad3a85-a06d-43e8-9daa-3da89a0c66c5";
@@ -28,11 +28,11 @@ function veda_fn_993bae7a98f44549b8ffa315eb61eb44 () {
         console.error(error);
       }
     }
-veda_fn_993bae7a98f44549b8ffa315eb61eb44();
-function veda_fn_146d80fa510843b0b7a3d63cdafaa43f () {
+veda_fn_4ab5235fa1ae443fa23523b79772f4bc();
+function veda_fn_3b5fb714efdb45a5be4aef3be2642e14 () {
       
-  if (window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup === undefined) {
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup = {
+  if (window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup === undefined) {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup = {
       listeners: [],
       push(listener) {
         this.listeners.push(listener);
@@ -43,7 +43,7 @@ function veda_fn_146d80fa510843b0b7a3d63cdafaa43f () {
       }
     }
   }
-  window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.cleanup();
+  window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.cleanup();
 
       try {
         const uniqueId = "id_85c4d86f-029c-4de5-9e44-b8dd39d7951a";
@@ -157,7 +157,7 @@ class PageProduct {
         store.set("@visiblePickup", false);
       };
       btnPickUpCloseEl.addEventListener("click", handleClick);
-      window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+      window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
         btnPickUpCloseEl.removeEventListener("click", handleClick);
       });
     });
@@ -198,7 +198,7 @@ class PageProduct {
           ".veda-pickup-toggle-js"
         );
         currentBtn.addEventListener("click", this.handleClickDraw);
-        window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+        window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
           currentBtn.removeEventListener("click", this.handleClickDraw);
         });
         this.pickupLoading = false;
@@ -538,7 +538,7 @@ class PageProduct {
       const hasItem = () => this.checkHasItem(productData, state);
       this.changeStatus(btnWishListEl, hasItem);
     });
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       unsubscribeWishList();
       btnWishListEl.removeEventListener("click", handleClick);
     });
@@ -570,7 +570,7 @@ class PageProduct {
       }
     };
     btnCompareEl.addEventListener("click", handleClick);
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       btnCompareEl.removeEventListener("click", handleClick);
     });
     let unsubscribeCompare = productCompare.subscribe((state) => {
@@ -580,7 +580,7 @@ class PageProduct {
       const hasItem = () => this.checkHasItem(productData, state);
       this.changeStatus(btnCompareEl, hasItem);
     });
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       unsubscribeCompare();
     });
   }
@@ -651,7 +651,7 @@ class PageProduct {
       }
     };
     btnAddCart.addEventListener("click", handleClick);
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       btnAddCart.removeEventListener("click", handleClick);
     });
   }
@@ -671,7 +671,7 @@ class PageProduct {
         `${random(Number(min), Number(max))}`
       )}`;
     }, Number(time) * 1000);
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       clearInterval(intervalID);
     });
   }
@@ -702,7 +702,7 @@ const photo = photoSwipe({
   gallery: ".veda-photo-swipe",
 });
 const destroyZoom = imageZoom(container);
-window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
   photo();
   destroyZoom();
   window.removeEventListener("resize", initAddonMobile);
@@ -728,7 +728,7 @@ function handleUpdateJsPickUp(el) {
       store.set("@visiblePickup", false);
     };
     btnPickUpCloseEl.addEventListener("click", handleClick);
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       btnPickUpCloseEl.removeEventListener("click", handleClick);
     });
   });
@@ -772,7 +772,7 @@ async function renderPickUp() {
       }
     });
     handleUpdateJsPickUp(container);
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       unsubscribePickUp();
     });
   } else {
@@ -802,7 +802,7 @@ async function renderPickUp() {
               });
               clearTimeout(id);
             }, 100);
-            window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+            window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
               clearTimeout(id);
             });
           } else {
@@ -824,12 +824,12 @@ async function renderPickUp() {
       handleUpdateJsPickUp(contentPickUp);
     }
 
-    window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+    window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
       unsubscribevisiblePickup();
     });
   }
   btnTogglePickUp.addEventListener("click", handleClickDraw);
-  window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+  window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
     btnTogglePickUp.removeEventListener("click", handleClickDraw);
   });
 }
@@ -852,7 +852,7 @@ videoEls.forEach((videoEl) => {
     });
   }
   intersectionObserver.addListener(handleVideo, videoEl);
-  window.veda_fn_146d80fa510843b0b7a3d63cdafaa43fCleanup.push(() => {
+  window.veda_fn_3b5fb714efdb45a5be4aef3be2642e14Cleanup.push(() => {
     intersectionObserver.removeListener(handleVideo);
   });
 });
@@ -861,11 +861,11 @@ videoEls.forEach((videoEl) => {
         console.error(error);
       }
     }
-veda_fn_146d80fa510843b0b7a3d63cdafaa43f();
-function veda_fn_ce0e020562e64aadbf345d7ede59c61c () {
+veda_fn_3b5fb714efdb45a5be4aef3be2642e14();
+function veda_fn_eac0d75bf22841fba1c08d09a8b13f3f () {
       
-  if (window.veda_fn_ce0e020562e64aadbf345d7ede59c61cCleanup === undefined) {
-    window.veda_fn_ce0e020562e64aadbf345d7ede59c61cCleanup = {
+  if (window.veda_fn_eac0d75bf22841fba1c08d09a8b13f3fCleanup === undefined) {
+    window.veda_fn_eac0d75bf22841fba1c08d09a8b13f3fCleanup = {
       listeners: [],
       push(listener) {
         this.listeners.push(listener);
@@ -876,7 +876,7 @@ function veda_fn_ce0e020562e64aadbf345d7ede59c61c () {
       }
     }
   }
-  window.veda_fn_ce0e020562e64aadbf345d7ede59c61cCleanup.cleanup();
+  window.veda_fn_eac0d75bf22841fba1c08d09a8b13f3fCleanup.cleanup();
 
       try {
         const uniqueId = "id_66d27f2a-ce0d-4685-860c-ecb4f90acb45";
@@ -917,7 +917,7 @@ const instance = veda.plugins.tabs(tabEl, {
 if (builderMode) {
   instance.go(Number(storage.getItem("current-tab-detail")) || 0);
 }
-window.veda_fn_ce0e020562e64aadbf345d7ede59c61cCleanup.push(() => {
+window.veda_fn_eac0d75bf22841fba1c08d09a8b13f3fCleanup.push(() => {
   instance.destroy();
 });
 
@@ -961,7 +961,7 @@ function handleActiveAddOn() {
       }, 300);
     }
     ratingItem.addEventListener("click", handleClickAddon, true);
-    window.veda_fn_ce0e020562e64aadbf345d7ede59c61cCleanup.push(() => {
+    window.veda_fn_eac0d75bf22841fba1c08d09a8b13f3fCleanup.push(() => {
       ratingItem.removeEventListener("click", handleClickAddon, true);
     });
   }
@@ -999,7 +999,7 @@ if (builderMode) {
     }
   }
   window.addEventListener("message", handleMessage);
-  window.veda_fn_ce0e020562e64aadbf345d7ede59c61cCleanup.push(() => {
+  window.veda_fn_eac0d75bf22841fba1c08d09a8b13f3fCleanup.push(() => {
     window.removeEventListener("message", handleMessage);
   });
 }
@@ -1008,11 +1008,11 @@ if (builderMode) {
         console.error(error);
       }
     }
-veda_fn_ce0e020562e64aadbf345d7ede59c61c();
-function veda_fn_54a7aef40baf4ee08591dbc0e725dab3 () {
+veda_fn_eac0d75bf22841fba1c08d09a8b13f3f();
+function veda_fn_4600253f93af4ff28132e9eb85d89e24 () {
       
-  if (window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup === undefined) {
-    window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup = {
+  if (window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup === undefined) {
+    window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup = {
       listeners: [],
       push(listener) {
         this.listeners.push(listener);
@@ -1023,7 +1023,7 @@ function veda_fn_54a7aef40baf4ee08591dbc0e725dab3 () {
       }
     }
   }
-  window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.cleanup();
+  window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.cleanup();
 
       try {
         const uniqueId = "id_1db14417-3782-4095-81fd-6e24a0d94a56";
@@ -1108,7 +1108,7 @@ function handleCompare() {
       }
     };
     btnCompareEl.addEventListener("click", handleClick);
-    window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+    window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
       btnCompareEl.removeEventListener("click", handleClick);
     });
   });
@@ -1122,7 +1122,7 @@ function handleCompare() {
       changeStatus(btnCompareEl, hasItem);
     });
   });
-  window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+  window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
     unsubscribeCompare();
   });
 }
@@ -1152,7 +1152,7 @@ function handleWishList() {
       }
     };
     btnWishListEl.addEventListener("click", handleClick);
-    window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+    window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
       btnWishListEl.removeEventListener("click", handleClick);
     });
   });
@@ -1166,7 +1166,7 @@ function handleWishList() {
       changeStatus(btnWishList, hasItem);
     });
   });
-  window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+  window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
     unsubscribeWishList();
   });
 }
@@ -1188,7 +1188,7 @@ function addCartSuccess(el) {
     loading = false;
     clearTimeout(id);
   }, 2000);
-  window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+  window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
     clearTimeout(id);
   });
 }
@@ -1221,7 +1221,7 @@ function handleCart() {
               addCartSuccess(btnAddCartEl);
               clearTimeout(id);
             }, 2000);
-            window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+            window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
               clearTimeout(id);
             });
           } else {
@@ -1244,7 +1244,7 @@ function handleCart() {
         }
       };
       btnAddCartEl.addEventListener("click", handleClick);
-      window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+      window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
         btnAddCartEl.removeEventListener("click", handleClick);
       });
     });
@@ -1272,7 +1272,7 @@ function handleQuickView() {
         });
       };
       btnQuickViewEl.addEventListener("click", handleClick);
-      window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+      window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
         btnQuickViewEl.removeEventListener("click", handleClick);
       });
     });
@@ -1423,12 +1423,12 @@ function handleSwiper() {
     const swiperInstance = swiper(container);
     const el = container.querySelector(".swiper-wrapper");
     el.style.alignItems = "stretch";
-    window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+    window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
       swiperInstance.destroy();
     });
     clearTimeout(id);
   }, 0);
-  window.veda_fn_54a7aef40baf4ee08591dbc0e725dab3Cleanup.push(() => {
+  window.veda_fn_4600253f93af4ff28132e9eb85d89e24Cleanup.push(() => {
     clearTimeout(id);
   });
 }
@@ -1444,4 +1444,4 @@ handleSwiper();
         console.error(error);
       }
     }
-veda_fn_54a7aef40baf4ee08591dbc0e725dab3();
+veda_fn_4600253f93af4ff28132e9eb85d89e24();
