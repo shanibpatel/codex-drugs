@@ -1,8 +1,8 @@
 {
   "layout": "theme.veda-pv-landing",
   "sections": {
-    "section_6631555ffc7dc30539ac2778": {
-      "type": "veda-pv-section_6631555ffc7dc30539ac2778",
+    "section_663bb672fc7dc30539ac35ad": {
+      "type": "veda-pv-section_663bb672fc7dc30539ac35ad",
       "settings": {
         "VEDA_select_1": "boxed",
         "VEDA_select_2": "none",
@@ -10,27 +10,33 @@
         "VEDA_switch_1": false,
         "VEDA_select_3": "cover",
         "VEDA_switch_2": false,
-        "VEDA_switch_3": false,
+        "VEDA_switch_3": true,
+        "VEDA_slider_5": 1,
         "VEDA_color_3": "var(--color-gray2)",
         "VEDA_space_1": 20,
         "VEDA_space_4": 20,
         "heading___enable": false,
-        "heading___manual": false,
+        "heading___manual": true,
         "heading___title": "Breadcrumb",
         "heading___divider": "none",
         "heading___align": "left",
         "breadcrumb___separator": "<i class=\"far fa-chevron-right\"><\/i>",
         "VEDA_radioGroup_1": "flex-start",
+        "VEDA_styleBox_3": "",
+        "VEDA_styleBox_4": "",
+        "VEDA_styleBox_5": "",
+        "VEDA_styleBox_6": "",
         "color_scheme": "veda-color-default"
       }
     },
-    "section_66315563fc7dc30539ac277b": {
-      "type": "veda-pv-section_66315563fc7dc30539ac277b",
+    "section_663bb676fc7dc30539ac35b0": {
+      "type": "veda-pv-section_663bb676fc7dc30539ac35b0",
       "blocks": {
         "b4170ccc-705f-451c-9314-d4353849962a": {
           "type": "content_badge",
           "settings": {
             "content___enable": true,
+            "content___custom_badge": "",
             "VEDA_styleBox_13": "",
             "content___new_design__id": ""
           }
@@ -67,14 +73,6 @@
             "content___enable": true
           }
         },
-        "4396d027-1d50-4c3f-9c96-ec4fa2af14e6": {
-          "type": "content_availability",
-          "settings": {
-            "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": ""
-          }
-        },
         "c3b31759-9fda-4d7d-81bf-bd180fe3ec55": {
           "type": "content_type",
           "settings": {
@@ -89,6 +87,7 @@
             "VEDA_styleBox_8": "",
             "VEDA_styleBox_9": "",
             "VEDA_styleBox_10": "",
+            "content___color_type": "color_image",
             "content___border_radius": 20,
             "content___color_width": 34,
             "content___color_height": 34
@@ -110,15 +109,7 @@
             "VEDA_styleBox_2": "",
             "content___min": 28,
             "content___max": 50,
-            "content___viewing_time": 3
-          }
-        },
-        "371eb345-d02f-4592-9229-d594b92c60f9": {
-          "type": "content_pick_up",
-          "settings": {
-            "content___enable": true,
-            "VEDA_styleBox_1": "",
-            "VEDA_styleBox_2": ""
+            "content___viewing_time": 5
           }
         },
         "b5092959-02f3-4335-90a0-9990f9465da7": {
@@ -129,11 +120,13 @@
             "VEDA_icon_2": "<i class=\"fal fa-minus\"><\/i>"
           }
         },
-        "5cdd0da3-77c3-431b-9679-74120a9858c0": {
+        "4a08c2f7-77e4-4df9-b546-961fec3ff691": {
           "type": "content_payment",
           "settings": {
             "content___enable": true,
             "content___title": "Guarantee safe & secure checkout",
+            "VEDA_styleBox_1": "",
+            "VEDA_styleBox_2": "",
             "content___items": "american_express, apple_pay, diners_club, discover, google_pay, master, paypal, shopify_pay, visa",
             "content___width_payment": 38
           }
@@ -152,7 +145,13 @@
             "collapse___enable": true,
             "collapse___icon": "<i class=\"far fa-shipping-fast\"><\/i>",
             "collapse___title": "Shipping Info",
-            "collapse___description": "<p>Return Policy: We will gladly accept returns for any reason within 30 days of receipt of delivery.<br>Availability: Ships anywhere in the India<br>Processing Time: Allow 3-4 business days processing time for your order to ship.<\/p>"
+            "collapse___description": "<p>Return Policy: We will gladly accept returns for any reason within 30 days of receipt of delivery.<br>Availability: Ships anywhere in the United States<br>Processing Time: Allow 3-4 business days processing time for your order to ship.<\/p>",
+            "VEDA_styleBox_26": "",
+            "VEDA_styleBox_27": "",
+            "VEDA_styleBox_24": "",
+            "VEDA_styleBox_25": "",
+            "VEDA_styleBox_28": "",
+            "VEDA_styleBox_29": ""
           }
         },
         "adb0d232-64ca-48ce-a6e7-c6ff9fbd40c2": {
@@ -169,7 +168,13 @@
           "settings": {
             "collapse___enable": true,
             "collapse___icon": "<i class=\"far fa-question-circle\"><\/i>",
-            "collapse___title": "Ask to question"
+            "collapse___title": "Ask to question",
+            "VEDA_styleBox_30": "",
+            "VEDA_styleBox_31": "",
+            "VEDA_styleBox_32": "",
+            "VEDA_styleBox_33": "",
+            "VEDA_styleBox_34": "",
+            "VEDA_styleBox_35": ""
           }
         }
       },
@@ -179,14 +184,12 @@
         "c0ad51c0-8e3c-4f32-bf47-2897bd88112a",
         "deef49c6-5e12-4e64-945c-2161345b147e",
         "545dd67b-a62a-4719-981d-8432749f27b9",
-        "4396d027-1d50-4c3f-9c96-ec4fa2af14e6",
         "c3b31759-9fda-4d7d-81bf-bd180fe3ec55",
         "f4058e97-b509-47b3-90ba-d0a0a5800c80",
         "774f1f74-7f05-41b3-b58d-a58ddb548dba",
         "b09ef4c3-98fd-4a0b-8a0a-db0f6d5b60ce",
-        "371eb345-d02f-4592-9229-d594b92c60f9",
         "b5092959-02f3-4335-90a0-9990f9465da7",
-        "5cdd0da3-77c3-431b-9679-74120a9858c0",
+        "4a08c2f7-77e4-4df9-b546-961fec3ff691",
         "6ddbc319-1502-4e8f-9fc8-10823e0e15ab",
         "444e3f5d-ec20-481e-8927-4ad8d94522c6",
         "adb0d232-64ca-48ce-a6e7-c6ff9fbd40c2",
@@ -228,46 +231,52 @@
         "container_design__id": ""
       }
     },
-    "section_66315560fc7dc30539ac2779": {
-      "type": "veda-pv-section_66315560fc7dc30539ac2779",
+    "section_663bb672fc7dc30539ac35ae": {
+      "type": "veda-pv-section_663bb672fc7dc30539ac35ae",
       "blocks": {
         "bb15f4c4-b7a5-4e46-9300-214cad36d856": {
           "type": "content_description",
           "settings": {
-            "content___title": "DESCRIPTION"
-          }
-        },
-        "ebca5ffd-b6d6-41b9-8b7d-3df42b7b4283": {
-          "type": "content_rich_text",
-          "settings": {
-            "content___title": "INGREDIENTS",
-            "content___text": "<p><strong>• EXTRACT VARUNA <\/strong>(Creteava Nurvala)<\/p><p>It is used for Urinary stone &amp; prostatic enlargement.&nbsp;<\/p><p>• <strong>EXTRACT PASHANBHED <\/strong>(Berginia Legulata)<\/p><p>Pashanbhed itself means which can break the stone. It is used since ancient time to treat urinary disease &amp; stone in the urinary system.&nbsp;<\/p><p>• <strong>EXTRACT GOKHRU <\/strong>(Tribulus Terrestris)<\/p><p>It is used to treat urinary infections, Inflamation etc.&nbsp;<\/p><p>• <strong>EXTRACT PUNARNAVA <\/strong>(Boerhvia Diffusa)<\/p><p>This herb is said to cure disorders like intestinal colic, kidney disorders &amp; urinary system.&nbsp;<\/p><p>• <strong>YAVKSHAR <\/strong>(Hordeum Vulgare)<\/p><p>It is alkaline preparation from a Barley plant. It is used in the treatment of Urinary calculi, Abdominal pain, Useful for difficulty in urination.&nbsp;<\/p><p>• <strong>BILVA MUL <\/strong>(Aegle Marmelos)<\/p><p>It has Diuretic properties, which increases flow of urine.&nbsp;<\/p><p>• <strong>PUMPKIN SEED <\/strong>(Benincasa Cerifera)<\/p><p>It is used to increase urine flow; it prevents urinary stone &amp; is Antioxident.&nbsp;<\/p><p>• <strong>YESTHIMADHU <\/strong>(Glycyrrhiza Glabra)<\/p><p>It is antibacterial &amp; Antioxidant.<\/p>"
+            "content___title": "Description"
           }
         },
         "8baf523f-c0be-45e4-8589-4857f205b259": {
           "type": "content_rich_text",
           "settings": {
-            "content___title": "FEATURES & BENEFITS",
-            "content___text": "<p>PROSTEZY makes your urination (IN OLD AGE) eazy by -<\/p><p>• Prevention of prostatic enlargement.<\/p><p>• Increase in urine flow.&nbsp;<\/p><p>• Prevention of urinary stone formation.<\/p><p>• Antioxidant property.<\/p>"
+            "content___title": "Shipping & Return",
+            "content___text": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.<\/p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.<\/p>",
+            "content___image_quantity": 0
           }
         },
         "29e06dd2-61df-46ed-a3bf-3e06c04797b6": {
           "type": "content_rich_text",
           "settings": {
-            "content___title": "DOSE & COMPOSITION",
-            "content___text": "<p>Initially take 2 capsules two times a day for 15-30 days and then it can be reduced to 1 capsule three times a day or two times a day as per severity of problem.<\/p>"
+            "content___title": "Custom Tab",
+            "content___text": "<p>You can write your content here or click the icon in the editor to add \"metafields\"<\/p>",
+            "content___image_quantity": 0,
+            "VEDA_image_4": 0,
+            "content___image_1__width": 0,
+            "VEDA_image_5": 0,
+            "content___image_2__width": 0,
+            "VEDA_image_6": 0,
+            "content___image_3__width": 0
+          }
+        },
+        "fc9a770f-0c01-4a76-af76-a3001cff5c37": {
+          "type": "content_review",
+          "settings": {
+            "content___title": "Review"
           }
         }
       },
       "block_order": [
         "bb15f4c4-b7a5-4e46-9300-214cad36d856",
-        "ebca5ffd-b6d6-41b9-8b7d-3df42b7b4283",
         "8baf523f-c0be-45e4-8589-4857f205b259",
-        "29e06dd2-61df-46ed-a3bf-3e06c04797b6"
+        "29e06dd2-61df-46ed-a3bf-3e06c04797b6",
+        "fc9a770f-0c01-4a76-af76-a3001cff5c37"
       ],
       "settings": {
         "VEDA_select_1": "boxed",
-        "VEDA_slider_2": 1,
         "VEDA_select_2": "none",
         "VEDA_video_1": "",
         "VEDA_switch_1": false,
@@ -283,20 +292,20 @@
         "VEDA_styleBox_4": "",
         "VEDA_styleBox_5": "",
         "VEDA_styleBox_6": "",
-        "VEDA_styleBox_7": "eydjc3NEZWZhdWx0Jzp7J2NvbG9yJzondmFyKC0tY29sb3ItcHJpbWFyeSknLCctLWNvbG9yJzondmFyKC0tY29sb3ItcHJpbWFyeSknfX0=",
-        "VEDA_styleBox_8": "css_1118609175",
-        "tabs_settings___align": "left",
+        "VEDA_styleBox_7": "",
+        "VEDA_styleBox_8": "",
+        "tabs_settings___align": "center",
         "color_scheme": "veda-color-default"
       }
     },
-    "section_66315560fc7dc30539ac277a": {
-      "type": "veda-pv-section_66315560fc7dc30539ac277a",
+    "section_663bb673fc7dc30539ac35af": {
+      "type": "veda-pv-section_663bb673fc7dc30539ac35af",
       "blocks": {
         "c9fa50ce-3078-4761-a745-107272e6c003": {
           "type": "heading_title",
           "settings": {
             "heading___enable": true,
-            "heading___title": "Recently viewed products",
+            "heading___title": "Recently Viewed Products",
             "heading___title_tag_name": "h4",
             "heading___align": "left"
           }
@@ -378,17 +387,17 @@
         "color_scheme": "veda-color-default"
       }
     },
-    "veda-pv-66315564fc7dc30539ac277c-scripts": {
-      "type": "veda-pv-66315564fc7dc30539ac277c-scripts",
+    "veda-pv-blank-scripts": {
+      "type": "veda-pv-blank-scripts",
       "settings": {
       }
     }
   },
   "order": [
-    "section_6631555ffc7dc30539ac2778",
-    "section_66315563fc7dc30539ac277b",
-    "section_66315560fc7dc30539ac2779",
-    "section_66315560fc7dc30539ac277a",
-    "veda-pv-66315564fc7dc30539ac277c-scripts"
+    "section_663bb672fc7dc30539ac35ad",
+    "section_663bb676fc7dc30539ac35b0",
+    "section_663bb672fc7dc30539ac35ae",
+    "section_663bb673fc7dc30539ac35af",
+    "veda-pv-blank-scripts"
   ]
 }
