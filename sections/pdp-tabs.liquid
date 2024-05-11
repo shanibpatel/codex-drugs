@@ -1,0 +1,157 @@
+{% if  product.description != blank or product.metafields.custom.ingredients != blank and product.metafields.custom.features_benifits != blank and product.metafields.custom.dose_composition != blank%}
+{% endif%}
+<div class="pdp-wrapper">
+  <div class="tabs">
+    <div role="tablist">
+      {% if product.description != blank%}<button role="tab" aria-selected="true" id="Description">Description</button>{% endif %}
+      {% if product.metafields.custom.ingredients != blank %}<button role="tab" aria-selected="false" id="Ingredients">Ingredients</button>{% endif %}
+      {% if product.metafields.custom.features_benifits %}<button role="tab" aria-selected="false" id="features">Features & Benifits</button>{% endif %}
+      {% if product.metafields.custom.dose_composition != blank %}<button role="tab" aria-selected="false" id="dose">Dose & Composition</button>{% endif %}
+      
+    </div>
+    {% if product.description != blank%}
+    <div role="tabpanel" aria-labelledby="Description">
+      {{ product.description }}
+    </div>
+  {% endif %}
+    {% if product.metafields.custom.ingredients != blank %}
+    <div role="tabpanel" aria-labelledby="Ingredients" hidden >
+      {{ product.metafields.custom.ingredients | metafield_tag}}
+    </div>
+    {% endif %}
+    {% if product.metafields.custom.features_benifits %}
+      <div role="tabpanel" aria-labelledby="features" hidden>
+        {{ product.metafields.custom.features_benifits | metafield_tag}}
+      </div>
+    {% endif%}
+    {% if product.metafields.custom.dose_composition != blank %}
+      <div role="tabpanel" aria-labelledby="dose" hidden>
+        {{ product.metafields.custom.dose_composition | metafield_tag}}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% stylesheet %}
+  .thumbnail[aria-current] {
+    box-shadow: none !important;
+    border-color: #066b30!important;
+  }
+  
+  .product-form__input--pill input[type=radio]:checked+label{
+    background-color: #066b30!important;
+  }
+  .shopify-payment-button__button--unbranded {
+    background-color: #066b30!important;
+  }
+  .product-form__submit, .shopify-payment-button__button--unbranded {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 20px !important; 
+  }
+  .pdp-wrapper {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+  #MainProduct-template--17904397189355__main{background-color: #fff!important;}
+  
+  
+.pdp-wrapper .tabs {
+  display: grid;
+}
+
+.pdp-wrapper [role="tablist"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pdp-wrapper [role="tabpanel"] {
+  
+  padding: 2rem;
+}
+
+.pdp-wrapper button {
+	background: #e7e7e7;
+	border: 0;
+	color: black;
+	border-radius: 5px 5px 0 0;
+	--bs-color: rgba(0,0,0,0.1);
+	cursor:pointer;
+	font-size: 16px;
+    margin: 10px;
+    padding: 10px 20px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px; */
+}
+
+.pdp-wrapper button[aria-selected="true"] {
+	background: #066b30;
+	box-shadow: none;
+	color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.pdp-wrapper button:focus {
+  outline: 0;
+  --bs-color: rgba(0,0,0,0.6);
+}
+.product__title h1{
+  color: #066b30!important;
+}
+.product .price .badge{
+  background-color: #066b30!important;
+}
+
+  
+  /* \\\\\\ */
+  
+  .
+  
+  /* \\\\\\ */
+{% endstylesheet %}
+<script type="text/javascript">
+  const tab = document.querySelector('.tabs');
+const tabButtons = tab.querySelectorAll('[role="tab"]');
+const tabPanels = Array.from(tab.querySelectorAll('[role="tabpanel"]'));
+
+function tabClickHandler(e) {
+	//Hide All Tabpane
+	tabPanels.forEach(panel => {
+		panel.hidden = 'true';
+	});
+	
+	//Deselect Tab Button
+	tabButtons.forEach( button => {
+		button.setAttribute('aria-selected', 'false');
+	});
+	
+	//Mark New Tab
+	e.currentTarget.setAttribute('aria-selected', 'true');
+	
+	//Show New Tab
+	const { id } = e.currentTarget;
+	
+	const currentTab = tabPanels.find(
+		panel => panel.getAttribute('aria-labelledby') === id
+	);
+	
+	currentTab.hidden = false;
+}
+
+tabButtons.forEach(button => {
+	button.addEventListener('click', tabClickHandler);
+})
+</script>
+{% schema %}
+  {
+    "name": "Tabs",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Product Tabs"
+      }
+    ]
+    }
+{% endschema %}
